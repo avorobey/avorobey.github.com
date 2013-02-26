@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jelly no puzzle in html5</title>
+<meta charset=utf-8>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<style>
+body {
+  max-width: 674px;
+  margin: 4ex auto;
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  font-weight: normal;
+}
+#stage {
+  position: relative;
+  user-select: none;
+  display: inline-block;
+  border: solid 1px #777;
+}
+select#level {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font: inherit;
+}
+#reset {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font: inherit;
+}
+#stage table {
+  border-spacing: 0;
+  background: #ccc;
+  background-size: 36px 36px;
+  background-image: -webkit-linear-gradient(-45deg,
+    #ccc 25%, #bbb 25%, #bbb 50%, #ccc 50%, #ccc 75%, #bbb 75%);
+  background-image: linear-gradient(-45deg,
+    #ccc 25%, #bbb 25%, #bbb 50%, #ccc 50%, #ccc 75%, #bbb 75%);
+}
+#stage table td {
+  padding: 0;
+}
+.cell {
+  width: 48px;
+  height: 48px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.transparent {
+  background: #eef7ff;
+}
+.wall {
+}
+.jellybox {
+  position: absolute;
+  -webkit-transition:
+    /* sliding animation. */
+    left 200ms,
+    /* falling animation: roughly x^2. */
+    top 200ms cubic-bezier(0.5,0, 1,0.5);
+  transition:
+    /* sliding animation. */
+    left 200ms,
+    /* falling animation: roughly x^2. */
+    top 200ms cubic-bezier(0.5,0, 1,0.5);
+}
+.jelly {
+  position: absolute;
+  cursor: ew-resize;
+}
+.red {
+  background: hsl(0, 100%, 75%);
+  border: solid 1px hsl(0, 100%, 30%);
+}
+.blue {
+  background: hsl(216, 100%, 70%);
+  border: solid 1px hsl(216, 100%, 30%);
+}
+.green {
+  background: hsl(120, 100%, 45%);
+  border: solid 1px hsl(120, 100%, 30%);
+}
+</style>
+</head>
+<body>
+<h1>jelly</h1>
+
+<p>This is an HTML5 clone
+of <a href='http://qrostar.skr.jp/index.cgi?page=jelly&lang=en'>Jelly
+no Puzzle</a>, an excellent puzzle game that was released for Windows
+only.  The game design and levels are taken directly from that. If you
+can run the Windows version I highly recommend it as it has a lot of
+great extra details.</p>
+
+<div id='stage'>
+<div id='map'></div>
+<select id='level'>
+  <option value='0'>Level 1</option>
+  <option value='1'>Level 2</option>
+  <option value='2'>Level 3</option>
+  <option value='3'>Level 4</option>
+  <option value='4'>Level 5</option>
+  <option value='5'>Level 6</option>
+</select>
+<button id='reset'>Reset</button>
+</div>
+
+<p>How to play: left and right mouse button moves jellies left and
+  right.  When jellies of the same color touch they merge.
+  Your objective is to unify all jellies of the same color.</p>
+
+<p><a href='https://github.com/martine/jelly'>Here's the source</a>.
+  To be implemented:
+  <ol>
+    <li>Beautiful "you win" screen when you win.</li>
+</ol></p>
+
+<script src='jelly.js'></script>
+</body>
+</html>
