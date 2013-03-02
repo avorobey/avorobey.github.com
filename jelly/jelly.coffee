@@ -1,4 +1,5 @@
 levels = [
+  # Level 1
   [ "xxxxxxxxxxxxxx",
     "x            x",
     "x            x",
@@ -37,6 +38,7 @@ levels = [
     "xxxxx xxxxxxxx",
     "xxxxxxxxxxxxxx", ],
 
+  # Level 5
   [ "xxxxxxxxxxxxxx",
     "x            x",
     "x            x",
@@ -57,6 +59,232 @@ levels = [
     "x       r xxxx",
     "x   xxxxxxxxxx",
     "xxxxxxxxxxxxxx", ],
+
+  # Anchored jellies are specified separately after the
+  # level map. Instead of [row, row, row...in the presence of
+  # anchors the level specification is: 
+  # [ [row,row,row...], [ anchor, anchor, anchor...] ].
+  # Each anchor starts from a colored non-black jelly's
+  # coordinates and specifies the direction in which it's "held".
+  [ [ "xxxxxxxxxxxxxx",
+      "x            x",
+      "x          r x",
+      "x          x x",
+      "x     b   b  x",
+      "x     x  rr  x",
+      "x         x  x",
+      "x r  bx x x  x",
+      "x x  xx x x  x",
+      "xxxxxxxxxxxxxx", ],
+    [
+      { x:2, y:7, dir:'down' },
+      { x:5, y:7, dir:'down' },
+    ]                    
+  ],
+
+  [ [ "xxxxxxxxxxxxxx", 
+      "xxxx x  x xxxx",
+      "xxx  g  b  xxx",
+      "xx   x  x   xx",
+      "xx   b  g   xx",
+      "xxg        bxx",
+      "xxxg      bxxx",
+      "xxxx      xxxx",
+      "xxxxxxxxxxxxxx", ],
+    [
+      { x:5, y:4, dir:'up' },
+      { x:8, y:4, dir:'up' },
+    ]
+  ],
+
+  [ [ "xxxxxxxxxxxxxx",
+      "x            x",
+      "x            x",
+      "x          rbx",
+      "x    x     xxx",
+      "xb        00xx",
+      "xx  rx  x xxxx",
+      "xxxxxxxxxxxxxx", ],
+    [
+      { x:4, y:6, dir:'down' },
+    ],
+  ],
+
+  # Level 10
+  [ [ "xxxxxxxxxxxxxx",
+      "x   gr       x",
+      "x   00 1     x",
+      "x    x x xxxxx",
+      "x            x",
+      "x  x  x      x",
+      "x        x  rx",
+      "xx   x     gxx",
+      "x          xxx",
+      "xxxxxxxxxxxxxx", ],
+    [
+      { x:11, y:7, dir:'down' },
+      { x:12, y:6, dir:'down' },
+    ],
+  ],
+
+  [ [ "xxxxxxxxxxxxxx",
+      "x      g00g gx",
+      "x       xxx xx",
+      "x           gx",
+      "x11         xx",
+      "xxx          x",
+      "x       g    x",
+      "x   x xxx   gx",
+      "x   xxxxxx xxx",
+      "xxxxxxxxxxxxxx", ],
+    [
+      { x:12, y:7, dir:'down' },
+      { x:7, y:1, dir:'right' },
+      { x:10, y:1, dir:'left' },
+    ],
+  ],
+  
+  [ [ "xxxxxxxxxxxxxx",
+      "xxr rr  rr rxx",
+      "xxx  x  x  xxx",
+      "x            x",
+      "xb          bx",
+      "xx          xx",
+      "x            x",
+      "x            x",
+      "x   xxxxxx   x",
+      "xxxxxxxxxxxxxx", ],
+    [
+      { x:12, y:4, dir:'down' },
+    ],
+  ],
+
+  [ "xxxxxxxxxxxxxx",
+    "xxxxxxxxxxxxxx",
+    "xxxxx gr xxxxx",
+    "xxxxx rb xxxxx",
+    "xxxxx gr xxxxx",
+    "xxxxx bg xxxxx",
+    "xxxxxxxxxxxxxx",
+    "xxxxxxxxxxxxxx", ],
+
+  [ [ "xxxxxxxxxxxxxx",
+      "xxxxxxxxx   rx",
+      "xxxxxxxxx   gx",
+      "xxxxxxxxx   gx",
+      "x1122       gx",
+      "x1122       gx",
+      "x0033      xxx",
+      "x0033      xxx",
+      "xxr x gxxx xxx",
+      "xxxxxxxxxxxxxx", ],
+    [
+      { x:2, y:8, dir:'down' },
+      { x:6, y:8, dir:'down' },
+    ],
+  ],
+
+  # Level 15
+  [ [ "xxxxxxxxxxxxxx",
+      "xr r r      rx",
+      "xg x x      gx",
+      "xb          bx",
+      "xxxxx     xxxx",
+      "xxxxxx   xxxxx",
+      "xxxxxx   xxxxx",
+      "xxxxxx   xxxxx",
+      "xxxxxxgggxxxxx",
+      "xxxxxxxxxxxxxx", ],
+    [
+      { x:1, y:3, dir:'down' },
+      { x:6, y:8, dir:'left' },
+      { x:8, y:8, dir:'right' },
+    ],
+  ],
+
+  [ [ "xxxxxxxxxxxxxx",
+      "xx   0001233rx",
+      "xx   0411233xx",
+      "xx   444122xxx",
+      "xx     xxxxxxx",
+      "xr     xxxxxxx",
+      "xx     xxxxxxx",
+      "xx     xxxxxxx",
+      "xx     xxxxxxx",
+      "xxxxxxxxxxxxxx", ],
+    [
+      { x:1, y:5, dir:'up' },
+    ],
+  ],
+
+  [ [ "xxxxxxxxxxxxxx",
+      "xxxx000xxxgb x",
+      "xxxx0     bg x",
+      "xxxx0    11xxx",
+      "xxxx000xxxxxxx",
+      "x 222  xxxxxxx",
+      "xxxx     xxgxx",
+      "xxxx   g    bx",
+      "xxxx   x     x",
+      "xxxxxxxxxxxxxx", ],
+    [
+      { x:11, y:6, dir:'up' },
+      { x:12, y:7, dir:'up' },
+    ],
+  ],
+
+  [ [ "xxxxxxxxxxxxxx",
+      "x            x",
+      "xb01         x",
+      "xb0gg     g  x",
+      "xb023     g4bx",
+      "xxxxx g   xxxx",
+      "xxxxx gg  xxxx",
+      "xxxxx ggg xxxx",
+      "xxxxx ggggxxxx",
+      "xxxxxxxxxxxxxx", ],
+    [
+      { x:12, y:4, dir:'down' },
+    ],
+  ],
+
+  [ [ "xxxxxxxxxxxxxx",
+      "xg0    g1gx  x",
+      "x 3g    1 x  x",
+      "x444    2 x  x",
+      "xg g   ggg   x",
+      "xxx     xxx  x",
+      "xxx     xxx  x",
+      "xxx     xxx  x",
+      "xxx          x",
+      "xxxxxxxxxxxxxx", ],
+    [
+      { x:1, y:1, dir:'right' },
+      { x:3, y:2, dir:'left' },
+      { x:1, y:4, dir:'up' },
+      { x:3, y:4, dir:'up' },
+      { x:8, y:4, dir:'up' },
+      { x:7, y:1, dir:'right' },
+      { x:9, y:1, dir:'left' },
+    ],
+  ],
+
+  # Level 20
+  [ [ "xxxxxxxxxxxxxx",
+      "xrrrr   rggxxx",
+      "xxxb    xxxxxx",
+      "xxxx       xbx",
+      "xx           x",
+      "xx           x",
+      "xx     x     x",
+      "xx x         x",
+      "xx        x  x",
+      "xxxxxxxxxxxxxx", ],
+    [
+      { x:12, y:3, dir:'up' },
+    ],
+  ],
+
   ]
 
 CELL_SIZE = 48
@@ -68,7 +296,13 @@ moveToCell = (dom, x, y) ->
 class Stage
   constructor: (@dom, map) ->
     @jellies = []
-    @loadMap(map)
+    anchors = []
+    if map[0] instanceof Array
+      anchors = map[1]
+      map = map[0]
+    @num_monochromatic_blocks = 0
+    @num_colors = 0
+    @loadMap(map, anchors)
 
     # Capture and swallow all click events during animations.
     @busy = false
@@ -80,43 +314,77 @@ class Stage
 
     @checkForMerges()
 
-  loadMap: (map) ->
+  loadMap: (map, anchors) ->
     table = document.createElement('table')
     @dom.appendChild(table)
+    colors = {}
     @cells = for y in [0...map.length]
       row = map[y].split(//)
       tr = document.createElement('tr')
       table.appendChild(tr)
       for x in [0...row.length]
         color = null
+        classname = 'transparent'
         cell = null
+        td = document.createElement('td')
         switch row[x]
           when 'x'
-            cell = document.createElement('td')
-            cell.className = 'cell wall'
-            tr.appendChild(cell)
+            classname = 'cell wall'
+            cell = new Wall(td)
           when 'r' then color = 'red'
           when 'g' then color = 'green'
           when 'b' then color = 'blue'
-
-        unless cell
-          td = document.createElement('td')
-          td.className = 'transparent'
-          tr.appendChild(td)
+          when '0','1','2','3','4','5','6','7','8','9'
+            color = 'black' + row[x]
+        td.className = classname
+        tr.appendChild(td)
         if color
-          jelly = new Jelly(this, x, y, color)
+          cell = new JellyCell(color)
+          jelly = new Jelly(this, cell, x, y)
           @dom.appendChild(jelly.dom)
           @jellies.push jelly
-          cell = jelly
+          @num_monochromatic_blocks += 1;
+          @num_colors +=1 unless color of colors
+          colors[color] = 1
         cell
     @addBorders()
+    @placeAnchors(anchors)
     return
+
+  placeAnchors: (anchors) ->
+    directions = {
+      'left':  [-1,  0, 'leftarrow', 'borderRightColor'],
+      'right': [ 1,  0, 'rightarrow', 'borderLeftColor'],
+      'up':    [ 0, -1, 'uparrow', 'borderBottomColor'],
+      'down':  [ 0,  1, 'downarrow', 'borderTopColor'],
+    }
+    colors = {
+      'red'  : 'hsl(0, 100%, 75%)'
+      'green': 'hsl(120, 100%, 45%)'
+      'blue' : 'hsl(216, 100%, 70%)'
+    }
+    for anchor in anchors
+      dx = directions[anchor.dir][0]
+      dy = directions[anchor.dir][1]
+      classname = directions[anchor.dir][2]
+      property = directions[anchor.dir][3]
+      
+      me = @cells[anchor.y][anchor.x]
+      other = @cells[anchor.y + dy][anchor.x + dx]
+      me.mergeWith(other, anchor.dir)
+
+      # Create the overlapping anchoring triangle.
+      arrow = document.createElement('div')
+      arrow.style[property] = colors[me.color]
+      arrow.className = classname
+      other.dom.appendChild(arrow)
+    @jellies = (jelly for jelly in @jellies when jelly.cells)
 
   addBorders: ->
     for y in [0...@cells.length]
       for x in [0...@cells[0].length]
         cell = @cells[y][x]
-        continue unless cell and cell.tagName == 'TD'
+        continue unless cell instanceof Wall
         border = 'solid 1px #777'
         edges = [
           ['borderBottom',  0,  1],
@@ -128,120 +396,137 @@ class Stage
           continue unless 0 <= (y+dy) < @cells.length
           continue unless 0 <= (x+dx) < @cells[0].length
           other = @cells[y+dy][x+dx]
-          cell.style[attr] = border unless other and other.tagName == 'TD'
+          cell.dom.style[attr] = border unless other instanceof Wall
     return
 
-  # When pushing, we may be firing multiple 'left' transitions at once;
-  # we need the count parameter to swallow them all, as they may be followed
-  # immediately by 'top' transitions (falling).
-  waitForAnimation: (count, cb) ->
+  waitForAnimation: (cb) ->
     names = ['transitionend', 'webkitTransitionEnd']
-    @pending = count
-    end = (e) =>
-      @pending = @pending - 1
-      if @pending == 0
-        @dom.removeEventListener(name, end) for name in names
-        cb()
+    end = () =>
+      @dom.removeEventListener(name, end) for name in names
+      # Wait one call stack before continuing.  This is necessary if there
+      # are multiple pending end transition events (multiple jellies moving);
+      # we want to wait for them all here and not accidentally catch them
+      # in a subsequent waitForAnimation.
+      setTimeout(cb, 0)
     @dom.addEventListener(name, end) for name in names
     return
 
   trySlide: (jelly, dir) ->
-    bunch = [jelly]
-    return if @checkFilled(bunch, dir, 0)
+    jellies = [jelly]
+    return if @checkFilled(jellies, dir, 0)
     @busy = true
-    # Start with jellies added last, so as not to overwrite @cells.
-    for j in bunch.reverse()
-      @move(j, j.x + dir, j.y)
-    @waitForAnimation(bunch.length, () =>
+    @move(jellies, dir, 0)
+    @waitForAnimation () =>
       @checkFall =>
         @checkForMerges()
-        @busy = false)
+        @busy = false
 
-  move: (jelly, targetX, targetY) ->
-    @cells[y][x] = null for [x, y] in jelly.cellCoords()
-    jelly.updatePosition(targetX, targetY)
-    @cells[y][x] = jelly for [x, y] in jelly.cellCoords()
+  move: (jellies, dx, dy) ->
+    @cells[y][x] = null for [x, y, cell] in jelly.cellCoords() for jelly in jellies
+    jelly.updatePosition(jelly.x+dx, jelly.y+dy) for jelly in jellies
+    @cells[y][x] = cell for [x, y, cell] in jelly.cellCoords() for jelly in jellies
     return
 
-  checkFilled: (bunch, dx, dy) ->
+  checkFilled: (jellies, dx, dy) ->
     done = false
     while not done
       done = true
-      for jelly in bunch
-        for [x, y] in jelly.cellCoords()
+      for jelly in jellies
+        return true if jelly.immovable
+        for [x, y, cell] in jelly.cellCoords()
           next = @cells[y + dy][x + dx]
-          if next and not(next in bunch)
-            if next instanceof Jelly
-              bunch.push(next)
-              done = false
-              break
-            else return next
-        break if not done 
+          continue unless next           # empty space
+          return true unless next.jelly  # wall
+          continue if next.jelly in jellies
+          jellies.push next.jelly
+          done = false
+          break
     return false
 
   checkFall: (cb) ->
     moved = false
-    didOneMove = true
-    while didOneMove
-      didOneMove = false
+    try_again = true
+    while try_again
+      try_again = false
       for jelly in @jellies
-        if not @checkFilled([jelly], 0, 1)
-          @move(jelly, jelly.x, jelly.y + 1)
-          didOneMove = true
+        jellyset = [jelly]
+        if not @checkFilled(jellyset, 0, 1)
+          @move(jellyset, 0, 1)
+          try_again = true
           moved = true
     if moved
-      # Nothing follows this, so it's alright to wait for just one event.
-      @waitForAnimation(1,cb)
+      @waitForAnimation cb
     else
       cb()
     return
 
   checkForMerges: ->
     merged = false
-    while jelly = @doOneMerge()
+    while @doOneMerge()
       merged = true
-      for [x, y] in jelly.cellCoords()
-        @cells[y][x] = jelly
     @checkForCompletion() if merged
     return
 
   checkForCompletion: ->
-    colors = {}
-    colors[j.color] = 1 for j in @jellies
-    if Object.keys(colors).length == @jellies.length
+    if @num_monochromatic_blocks <= @num_colors
       alert("Congratulations! Level completed.")
     return
 
   doOneMerge: ->
     for jelly in @jellies
-      for [x, y] in jelly.cellCoords()
+      for [x, y, cell] in jelly.cellCoords()
         # Only look right and down; left and up are handled by that side
         # itself looking right and down.
-        for [dx, dy] in [[1, 0], [0, 1]]
+        for [dx, dy, dir] in [[1, 0, 'right'], [0, 1, 'down']]
           other = @cells[y + dy][x + dx]
-          continue unless other and other instanceof Jelly
-          continue unless other != jelly
-          continue unless jelly.color == other.color
-          jelly.merge other
-          @jellies = @jellies.filter (j) -> j != other
-          return jelly
-    return null
+          continue unless other and other instanceof JellyCell
+          continue if cell['merged' + dir]
+          continue unless other.color == cell.color
+          if jelly != other.jelly
+            @jellies = @jellies.filter (j) -> j != other.jelly
+            @num_monochromatic_blocks -= 1
+          cell.mergeWith other, dir
+          cell['merged' + dir] = true
+          return true
+    return false
+
+class Wall
+  constructor: (@dom) ->
 
 class JellyCell
-  constructor: (@jelly, @x, @y, color) ->
+  constructor: (@color) ->
     @dom = document.createElement('div')
     @dom.className = 'cell jelly ' + color
+    @x = 0
+    @y = 0
+
+  mergeWith: (other, dir) ->
+    borders = {
+      'left':  ['borderLeft',   'borderRight'],
+      'right': ['borderRight',  'borderLeft'],
+      'up':    ['borderTop',    'borderBottom'],
+      'down':  ['borderBottom', 'borderTop']
+    }
+    # Remove internal borders, whether merging with other jelly or wall.
+    @dom.style[borders[dir][0]] = 'none'
+    other.dom.style[borders[dir][1]] = 'none'
+
+    # If merging with wall, jelly becomes immovable.
+    @jelly.immovable = true if other instanceof Wall
+
+    # If merging with jelly, unify the jellies.
+    if other instanceof JellyCell and @jelly != other.jelly
+      @jelly.merge(other.jelly)
 
 
 class Jelly
-  constructor: (stage, @x, @y, @color) ->
+  constructor: (stage, cell, @x, @y) ->
     @dom = document.createElement('div')
     @updatePosition(@x, @y)
     @dom.className = 'cell jellybox'
-
-    cell = new JellyCell(this, 0, 0, @color)
-    @dom.appendChild(cell.dom)
+    cell.jelly = this
     @cells = [cell]
+    @dom.appendChild(cell.dom)
 
     @dom.addEventListener 'contextmenu', (e) =>
       stage.trySlide(this, 1)
@@ -255,9 +540,10 @@ class Jelly
       if Math.abs(dx) > 10
         dx = Math.max(Math.min(dx, 1), -1)
         stage.trySlide(this, dx)
+    @immovable = false
 
   cellCoords: ->
-    [@x + cell.x, @y + cell.y] for cell in @cells
+    [@x + cell.x, @y + cell.y, cell] for cell in @cells
 
   updatePosition: (@x, @y) ->
     moveToCell @dom, @x, @y
@@ -270,36 +556,30 @@ class Jelly
       @cells.push cell
       cell.x += dx
       cell.y += dy
+      cell.jelly = this
       moveToCell cell.dom, cell.x, cell.y
       @dom.appendChild(cell.dom)
 
+    @immovable = true if other.immovable
     # Delete references from/to other.
     other.cells = null
     other.dom.parentNode.removeChild(other.dom)
-
-    # Remove internal borders.
-    for cell in @cells
-      for othercell in @cells
-        continue if othercell == cell
-        if othercell.x == cell.x + 1 and othercell.y == cell.y
-          cell.dom.style.borderRight = 'none'
-        else if othercell.x == cell.x - 1 and othercell.y == cell.y
-          cell.dom.style.borderLeft = 'none'
-        else if othercell.x == cell.x and othercell.y == cell.y + 1
-          cell.dom.style.borderBottom = 'none'
-        else if othercell.x == cell.x and othercell.y == cell.y - 1
-          cell.dom.style.borderTop = 'none'
     return
 
-level = parseInt(location.search.substr(1), 10) or 0
-stage = new Stage(document.getElementById('map'), levels[level])
+level = parseInt(location.search.substr(1), 10) or 1
+stage = new Stage(document.getElementById('map'), levels[level-1])
 window.stage = stage
 
 levelPicker = document.getElementById('level')
+for i in [1..levels.length]
+  option = document.createElement('option')
+  option.value = i
+  option.innerText = "Level #{i}"
+  levelPicker.appendChild(option)
 levelPicker.value = level
 levelPicker.addEventListener 'change', () ->
   location.search = '?' + levelPicker.value
 
 document.getElementById('reset').addEventListener 'click', ->
   stage.dom.innerHTML = ''
-  stage = new Stage(stage.dom, levels[level])
+  stage = new Stage(stage.dom, levels[level-1])
