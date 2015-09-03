@@ -16,13 +16,13 @@ A Lie group is a differential manifold that is also a group, such that group mul
 inverse are infinitely differentiable functions. Such a manifold is often called a smooth manifold,
 and infinitely differentiable functions are also known as smooth functions.
 
-A straightforward example is \\( R^n \\) as an abelian group under addition. This is an ((\ n- \\) dimensional
+A straightforward example is \\( R^n \\) as an abelian group under addition. This is an \\( n- \\) dimensional
 smooth manifold and addition with its inverse are obviously infinitely differentiable. 
 
 For an example with a more interesting group operation, consider a circle of radius \\( 1 \\) around the origin on the
 complex plane, which we think of topologically as \\( R^2 \\). Multiplication is well-defined for points 
 on this circle as product of complex numbers of absolute value \\( 1 \\) . Under this operation, the circle forms a group.
-We can write out the operation in terms of pairs of real coordinates, and it is clearly infinitely differentiable. The inverse of \\( (a,b) \\) is \\( (a,-b) \\), and that is also obviously smooth. The circle is a 1-dimensional submanifold of \\( R^2 \\).
+We can write out the operation in terms of pairs of real coordinates, and it is clearly infinitely differentiable. The inverse of \\( (a,b) \\) is \\( (a,-b) \\), and that is also obviously smooth. The circle is a \\( 1 \\) -dimensional submanifold of \\( R^2 \\).
 
 
 
