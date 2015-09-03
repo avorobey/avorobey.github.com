@@ -17,13 +17,18 @@ of two elements or an inverse of an element, as expected in any group, you also 
 from one element to another, and this continuous variation is compatible with the group structure. 
 
 What does "compatible with the group structure mean"? Say you have an element $$A$$ and an element $$B$$, and you form their product $$AB$$. 
-Now you start slowly moving $$A$$ along some path, and $B$ along some other path; then "compatible with the group structure" means
+Now you start slowly moving $$A$$ along some path, and $$B$$ along some other path; then "compatible with the group structure" means
 that the product $$AB$$ also moves slowly through a continuous path, rather than jumps around randomly. Similarly, if you form the inverse
-$$A^{-1}$$, then, as $A$ moves around continuously, so does its inverse.
+$$A^{-1}$$, then, as $$A$$ moves around continuously, so does its inverse.
 
 As a simple motivating example of a Lie group, think of rotations of a plane around a fixed origin point $$O$$. You can rotate the entire two-dimensional
-plane clockwise or counterclockwise around $$O$$ by any degree from $$0$$ to $$360$$, or in radians from $$0$$ to $$2\pi$$. 
-
+plane clockwise or counterclockwise around $$O$$ by any degree from $$0\unicode{xb0}$$ to $$360\unicode{xb0}$$, or in radians from $$0$$ to $$2\pi$$. 
+Think of each possible rotation as a separate "element". For example, let's denote by $$R_{d}$$ the rotation counterclockwise by $$d$$ degrees. Then
+$$R_{15}$$ is one rotation, $$R_{20}$$ is another, and you multiply them by first doing one, then the other, for the total of $$R_{35}$$. The
+inverse of $$R_{15}$$ is $$R_{345}$$, because if you combine the two, their product is $$R_0$$, no rotation at all, the idendity. With these operations,
+the rotations of the plane around $$O$$ form a group. But besides this group structure, there's also continuous movement, because the parameter of rotation
+is a real number that can vary continuously from $$0$$ to $$2\pi$$. This is "compatible with the group structure", because if you have a product of two rotations,
+and you change one of them very slightly, the whole product also changes very slightly rather than jumps somewhere unexpected.
 
 
 
@@ -32,7 +37,7 @@ A Lie group is a differential manifold that is also a group, such that group mul
 inverse are infinitely differentiable functions. Such a manifold is often called a smooth manifold,
 and infinitely differentiable functions are also known as smooth functions.
 
-A straightforward example is \\( R^n \\) as an abelian group under addition. This is an \\( n- \\) dimensional
+A straightforward example is $$R^n$$ as an abelian group under addition. This is an $$n-$$dimensional
 smooth manifold and addition with its inverse are obviously infinitely differentiable. 
 
 For an example with a more interesting group operation, consider a circle of radius \\( 1 \\) around the origin on the
