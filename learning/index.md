@@ -17,12 +17,12 @@ of two elements or an inverse of an element, as expected in any group, you also 
 from one element to another, and this continuous variation is compatible with the group structure. 
 
 What does "compatible with the group structure mean"? Say you have an element $$A$$ and an element $$B$$, and you form their product $$AB$$. 
-Now you start slowly moving A along some path, and B along some other path; then "compatible with the group structure" means
-that the product AB also moves slowly through a continuous path, rather than jumps around randomly. Similarly, if you form the inverse
-$$A^{-1}$$, then, as A moves around continuously, so does its inverse.
+Now you start slowly moving $$A$$ along some path, and $B$ along some other path; then "compatible with the group structure" means
+that the product $$AB$$ also moves slowly through a continuous path, rather than jumps around randomly. Similarly, if you form the inverse
+$$A^{-1}$$, then, as $A$ moves around continuously, so does its inverse.
 
-As a simple motivating example of a Lie group, think of rotations of a plane around a fixed origin point O. You can rotate the entire two-dimensional
-plane clockwise or counterclockwise around O by any degree from 0 to 360, or in radians from 0 to 2pi. 
+As a simple motivating example of a Lie group, think of rotations of a plane around a fixed origin point $$O$$. You can rotate the entire two-dimensional
+plane clockwise or counterclockwise around $$O$$ by any degree from $$0$$ to $$360$$, or in radians from $$0$$ to $$2\pi$$. 
 
 
 
