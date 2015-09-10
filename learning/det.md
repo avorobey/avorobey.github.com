@@ -14,7 +14,10 @@ title: Lie Groups
 **Решение.**
 
 Предположим, что такие точки существуют, и рассмотрим их как четыре вектора в $$R^2$$: $$\boldsymbol{a},
-\boldsymbol{b},\boldsymbol{c},\boldsymbol{d}$$.
+\boldsymbol{b},\boldsymbol{c},\boldsymbol{d}$$. Мы можем положить $$\\boldsymbol{d}=0$$, и тогда условие
+о попарных расстояниях означает, что $$\|\boldsymbol{a}\|, \|\boldsymbol{b}\|, \|\boldsymbol{c}\|, \|\boldsymbol{a}-\boldsymbol{b}\|$$
+итд. - все нечетные числа.
+
 
 
 Motivation and matrix Lie groups
