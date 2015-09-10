@@ -13,7 +13,7 @@ title: Lie Groups
 
 **Решение.**
 
-\newcommand{\vect}[1]{\boldsymbol{#1}}
+$$\newcommand{\vect}[1]{\boldsymbol{#1}}$$
 
 Предположим, что такие точки существуют, и рассмотрим их как четыре вектора в $$R^2$$: $$\vect{a},
 \boldsymbol{b},\boldsymbol{c},\boldsymbol{d}$$. Мы можем положить $$\boldsymbol{d}=0$$, и тогда условие
@@ -22,7 +22,7 @@ title: Lie Groups
 
 Рассмотрим следующую матрицу, которая состоит из скалярных произведений векторов $$\boldsymbol{a}, \boldsymbol{b}, \boldsymbol{c}$$:
 
-\\[ M = \begin{bmatrix} \langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{b}\rangle & \langle\vect{a},\vect{c}\rangle \\
+\\[ M = \begin{bmatrix} \langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{b}\rangle & \langle\vect{a},\vect{c}\rangle \\\\
 \langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{a}\rangle \\
 \langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{a}\rangle  & \langle\vect{a},\vect{a}\rangle \end{bmatrix} \\]
 
