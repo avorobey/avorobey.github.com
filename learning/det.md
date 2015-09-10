@@ -31,9 +31,9 @@ $$ M = \begin{pmatrix} \vect{a}_1 & \vect{a}_2 \\ \vect{b}_1 & \vect{b}_2 \\ \ve
 Ранг любой из этих двух матриц не может быть больше $$2$$, а следовательно и ранг произведения не больше $$2$$. Значит, матрица $$M$$
 вырождена, и $$\det M = 0$$. Следовательно, детерминант матрицы $$2M$$ тоже обязан быть $$0$$:
 
-$$ 2M = \begin{pmatrix} 2\langle\vect{a},\vect{a}\rangle & 2\langle\vect{a},\vect{b}\rangle & 2\langle\vect{a},\vect{c}\rangle \\
+$$ \det 2M = \begin{vmatrix} 2\langle\vect{a},\vect{a}\rangle & 2\langle\vect{a},\vect{b}\rangle & 2\langle\vect{a},\vect{c}\rangle \\
 2\langle\vect{b},\vect{a}\rangle & 2\langle\vect{b},\vect{b}\rangle & 2\langle\vect{b},\vect{c}\rangle \\
-2\langle\vect{c},\vect{a}\rangle & 2\langle\vect{c},\vect{b}\rangle & 2\langle\vect{c},\vect{c}\rangle \end{pmatrix} \det 2М = 0$$
+2\langle\vect{c},\vect{a}\rangle & 2\langle\vect{c},\vect{b}\rangle & 2\langle\vect{c},\vect{c}\rangle \end{vmatrix} = 0$$
 
 Присмотримся к этой матрице $$2M$$, и выразим ее элементы через нормы векторов:
 
