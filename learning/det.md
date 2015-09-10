@@ -22,9 +22,11 @@ $$\newcommand{\vect}[1]{\boldsymbol{#1}}$$
 
 Рассмотрим следующую матрицу, которая состоит из скалярных произведений векторов $$\boldsymbol{a}, \boldsymbol{b}, \boldsymbol{c}$$:
 
-\\[ M = \begin{bmatrix} \langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{b}\rangle & \langle\vect{a},\vect{c}\rangle \\\\
+\\[ M = \begin{pmatrix} \langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{b}\rangle & \langle\vect{a},\vect{c}\rangle \\\\
 \langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{a}\rangle \\
-\langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{a}\rangle  & \langle\vect{a},\vect{a}\rangle \end{bmatrix} \\]
+\langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{a}\rangle  & \langle\vect{a},\vect{a}\rangle \end{pmatrix} \\]
+
+$$H = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\\\ 7 & 8 & 9 \\\\\\\\ 10 && 11 & 12 \end{pmatrix}$$
 
 Motivation and matrix Lie groups
 
