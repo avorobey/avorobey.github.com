@@ -22,9 +22,15 @@ $$\newcommand{\vect}[1]{\boldsymbol{#1}}$$
 
 Рассмотрим следующую матрицу, которая состоит из скалярных произведений векторов $$\boldsymbol{a}, \boldsymbol{b}, \boldsymbol{c}$$:
 
-\\( M = \begin{pmatrix} \langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{b}\rangle & \langle\vect{a},\vect{c}\rangle \\
+$$ M = \begin{pmatrix} \langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{b}\rangle & \langle\vect{a},\vect{c}\rangle \\
 \langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{a}\rangle \\
-\langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{a}\rangle  & \langle\vect{a},\vect{a}\rangle \end{pmatrix} \\)
+\langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{a}\rangle  & \langle\vect{a},\vect{a}\rangle \end{pmatrix} $$
 
-$$H = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\\\ 7 & 8 & 9 \\\\\\\\ 10 && 11 & 12 \end{pmatrix}$$
+Нас интересует детерминант этой матрицы.
+
+С одной стороны, $$3\times 3$$ матрицу $$M$$ можно выразить как произведение матрицы $$3\times 2$$, содержащей координаты этих трех
+векторов, и транспонированной к ней матрицы $$2 \times 3$$:
+
+$$ M = \begin{pmatrix} \vect{a}_1 & \vect{a}_2 \\ \vect{b}_1 & \vect{b}_2 \\ \vect{c}_1 & \vect{c}_2 \end{pmatrix}
+\begin{pmatrix} \vect{a}_1 & \vect{b}_1 & \vect{c}_1 \\ \vect{a}_2 & \vect{b}_2 & \vect{c}_2 \end{pmatrix} $$
 
