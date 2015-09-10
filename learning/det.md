@@ -33,7 +33,7 @@ $$ M = \begin{pmatrix} \vect{a}_1 & \vect{a}_2 \\ \vect{b}_1 & \vect{b}_2 \\ \ve
 
 $$ 2M = \begin{pmatrix} 2\langle\vect{a},\vect{a}\rangle & 2\langle\vect{a},\vect{b}\rangle & 2\langle\vect{a},\vect{c}\rangle \\
 2\langle\vect{b},\vect{a}\rangle & 2\langle\vect{b},\vect{b}\rangle & 2\langle\vect{b},\vect{c}\rangle \\
-2\langle\vect{c},\vect{a}\rangle & 2\langle\vect{c},\vect{b}\rangle & 2\langle\vect{c},\vect{c}\rangle \end{pmatrix} \dет 2М = 0$$
+2\langle\vect{c},\vect{a}\rangle & 2\langle\vect{c},\vect{b}\rangle & 2\langle\vect{c},\vect{c}\rangle \end{pmatrix} \det 2М = 0$$
 
 Присмотримся к этой матрице $$2M$$, и выразим ее элементы через нормы векторов:
 
