@@ -35,10 +35,22 @@ $$ M = \begin{pmatrix} \vect{a}_1 & \vect{a}_2 \\ \vect{b}_1 & \vect{b}_2 \\ \ve
 \begin{pmatrix} \vect{a}_1 & \vect{b}_1 & \vect{c}_1 \\ \vect{a}_2 & \vect{b}_2 & \vect{c}_2 \end{pmatrix} $$
 
 Ранг любой из этих двух матриц не может быть больше $$2$$, а следовательно и ранг произведения не больше $$2$$. Значит, матрица $$M$$
-вырождена, и $$det(M) = 0$$. Следовательно, детерминант матрицы $$2M$$ тоже обязан быть $0$:
+вырождена, и $$\det M = 0$$. Следовательно, детерминант матрицы $$2M$$ тоже обязан быть $$0$$:
 
 $$ 2M = \begin{pmatrix} 2\langle\vect{a},\vect{a}\rangle & 2\langle\vect{a},\vect{b}\rangle & 2\langle\vect{a},\vect{c}\rangle \\
 2\langle\vect{b},\vect{a}\rangle & 2\langle\vect{b},\vect{b}\rangle & 2\langle\vect{b},\vect{c}\rangle \\
-\2langle\vect{c},\vect{a}\rangle & 2\langle\vect{c},\vect{b}\rangle  & 2\langle\vect{c},\vect{c}\rangle \end{pmatrix} $$
+2\langle\vect{c},\vect{a}\rangle & 2\langle\vect{c},\vect{b}\rangle & 2\langle\vect{c},\vect{c}\rangle \end{pmatrix} $$
+
+Присмотримся к этой матрице $$2M$$, и выразим ее элементы через нормы векторов. На диагонали в ней стоят числа вида 
+$$2\langle\vect{a},\vect{a}\rangle = 2\|\vect{a}\|^2$$.
+Во всех остальных ячейках находятся числа вида 
+$$2\langle\vect{a},\vect{b}\rangle = \|\vect{a}\|^2 + \|\vect{a}\|^2 - \|\vect{a}-\vect{b}\|^2$$ (это просто-напросто теорема косинусов).
+
+Все нормы векторов в этих выражениях - нечетные целые числа согласно нашему предположению. А квадрат нечетного числа
+всегда равен $$1$$ по модулю $$8$$ ($$(2k+1)^2 = 4k^2+4k+1 = 4(k^2+k) + 1$$, и поскольку $$k^2+k$$ всегда четное, первое слагаемое
+делится на 8). Значит, по модулю 8 все эти $$\|\vect{a}\|, \|\vect{a}-\vect{b}\|$$ итд. равны 1. Используя выражения для членов матрицы
+выше, мы видим, что
+
+$$2M \equiv; \begin{pmatrix} 2 & 1 & 1 \\ 1 & 2 & 1 \\ 1 & 1 & 2 \end{pmatrix} \mod 8$$
 
 
