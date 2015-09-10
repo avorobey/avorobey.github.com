@@ -22,7 +22,7 @@ $$ M = \begin{pmatrix} \langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{b
 \langle\vect{b},\vect{a}\rangle & \langle\vect{b},\vect{b}\rangle & \langle\vect{b},\vect{c}\rangle \\
 \langle\vect{c},\vect{a}\rangle & \langle\vect{c},\vect{b}\rangle  & \langle\vect{c},\vect{c}\rangle \end{pmatrix} $$
 
-С одной стороны, $$3\times 3$$ матрицу $$M$$ можно выразить как произведение матрицы $$3\times 2$$, содержащей координаты этих трех
+$$3\times 3$$ матрицу $$M$$ можно выразить как произведение матрицы $$3\times 2$$, содержащей координаты этих трех
 векторов, и транспонированной к ней матрицы $$2 \times 3$$:
 
 $$ M = \begin{pmatrix} \vect{a}_1 & \vect{a}_2 \\ \vect{b}_1 & \vect{b}_2 \\ \vect{c}_1 & \vect{c}_2 \end{pmatrix}
@@ -33,7 +33,7 @@ $$ M = \begin{pmatrix} \vect{a}_1 & \vect{a}_2 \\ \vect{b}_1 & \vect{b}_2 \\ \ve
 
 $$ 2M = \begin{pmatrix} 2\langle\vect{a},\vect{a}\rangle & 2\langle\vect{a},\vect{b}\rangle & 2\langle\vect{a},\vect{c}\rangle \\
 2\langle\vect{b},\vect{a}\rangle & 2\langle\vect{b},\vect{b}\rangle & 2\langle\vect{b},\vect{c}\rangle \\
-2\langle\vect{c},\vect{a}\rangle & 2\langle\vect{c},\vect{b}\rangle & 2\langle\vect{c},\vect{c}\rangle \end{pmatrix} $$
+2\langle\vect{c},\vect{a}\rangle & 2\langle\vect{c},\vect{b}\rangle & 2\langle\vect{c},\vect{c}\rangle \end{pmatrix} \дет 2М = 0$$
 
 Присмотримся к этой матрице $$2M$$, и выразим ее элементы через нормы векторов:
 
