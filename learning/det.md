@@ -7,20 +7,16 @@ title: Lie Groups
     </script>
 </head>
 
-
+$$\newcommand{\vect}[1]{\boldsymbol{#1}}$$ 
 **Задача.** Доказать, что не существует четырех точек на плоскости так, чтобы все попарные расстояния
 были нечетными целыми числами.
 
-**Решение.**
+**Решение.** Предположим, что такие точки существуют, и рассмотрим их как четыре вектора в $$R^2$$: $$\vect{a},
+\vect{b},\vect{c},\vect{d}$$. Мы можем положить $$\vect{d}=0$$, и тогда условие
+о попарных расстояниях означает, что $$\|\vect{a}\|, \|\vect{b}\|, \|\vect{c}\|, \|\vect{a}-\vect{b}\|,
+\|\vect{b}-\vect{c}\|, \|\vect{a}-\vect{c}\|$$ - все нечетные числа.
 
-$$\newcommand{\vect}[1]{\boldsymbol{#1}}$$
-
-Предположим, что такие точки существуют, и рассмотрим их как четыре вектора в $$R^2$$: $$\vect{a},
-\boldsymbol{b},\boldsymbol{c},\boldsymbol{d}$$. Мы можем положить $$\boldsymbol{d}=0$$, и тогда условие
-о попарных расстояниях означает, что $$\|\boldsymbol{a}\|, \|\boldsymbol{b}\|, \|\boldsymbol{c}\|, \|\boldsymbol{a}-\boldsymbol{b}\|,
-\|\boldsymbol{b}-\boldsymbol{c}\|, \|\boldsymbol{a}-\boldsymbol{c}\|$$ - все нечетные числа.
-
-Рассмотрим следующую матрицу, которая состоит из скалярных произведений векторов $$\boldsymbol{a}, \boldsymbol{b}, \boldsymbol{c}$$:
+Рассмотрим следующую матрицу, которая состоит из скалярных произведений векторов $$\vect{a}, \vect{b}, \vect{c}$$:
 
 $$ M = \begin{pmatrix} \langle\vect{a},\vect{a}\rangle & \langle\vect{a},\vect{b}\rangle & \langle\vect{a},\vect{c}\rangle \\
 \langle\vect{b},\vect{a}\rangle & \langle\vect{b},\vect{b}\rangle & \langle\vect{b},\vect{c}\rangle \\
