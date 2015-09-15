@@ -83,6 +83,6 @@ So now suppose we're not so lucky and in all these equations we have "remainders
 
 $$\prod{b_n*f_(x)} = b_n^k*\prod{f_i(x)} = b_n^k*f(x) = b(x)*A(x) + \prod{r_i}$$
 
-Since $$b(x)$$ divides $$f$$, we must have also $$b(x) || \prod{r_i}$$, that is $$b(x)*c'(x) = \prod(r_i)$$ for some $$c'(x) \in R[x]$$. In the product of $$r_i$$ every factor is of degree strictly less than that of $$f_i$$, so the result is of degree less than $$f$$. We can now expand this product into a factorisation, and get rid of all the $$R$$ parts on both sides via the same argument as before, which will still leave $$b(x)$$ as in irreducible divisor. The inductive hypothesis now shows that $$b(x)$$ finds an associate somewhere in this factorisation, which means it divides one of the $$r_i$$, which contradicts the assumption we made above.
+Since $$b(x)$$ divides $$f$$, we must have also $$b(x) \| \prod{r_i}$$, that is $$b(x)*c'(x) = \prod(r_i)$$ for some $$c'(x) \in R[x]$$. In the product of $$r_i$$ every factor is of degree strictly less than that of $$f_i$$, so the result is of degree less than $$f$$. We can now expand this product into a factorisation, and get rid of all the $$R$$ parts on both sides via the same argument as before, which will still leave $$b(x)$$ as in irreducible divisor. The inductive hypothesis now shows that $$b(x)$$ finds an associate somewhere in this factorisation, which means it divides one of the $$r_i$$, which contradicts the assumption we made above.
 
 
