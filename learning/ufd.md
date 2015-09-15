@@ -48,7 +48,7 @@ factorisations of $$f$$ and pass to a simpler $$f$$, enabling us to use inductio
 
 First, we prove that any irreducible divisor of $$f$$ in $$R$$ is essential. That is, let $$a\in R$$ be irreducible, $$a | f(x)$$. Then $$a$$ finds an associate in any factorisation $$f = f_1*...*f_k$$. We prove this by induction on the degree of $$f$$.
 Let the leading coefficient of $$f_i$$ be $$b_i$$ (if $$f_i \in R$$, then $$b_i=f_i$$), so that the leading coefficient of
- $$f$$ is \product{b_i}. $$R$$ is a UFD, so $$a$$ being irreducible means it's prime. Since $$a | f$$, $$a | \prod{b_i}$$,
+ $$f$$ is \prod{b_i}. $$R$$ is a UFD, so $$a$$ being irreducible means it's prime. Since $$a | f$$, $$a | \prod{b_i}$$,
 and since it's prime, $$a | b_i$$ for some $$i$$. If $$f_i \in R$$, then $$a | f_i$$, and being irreducible $$f_i$$ must
 be an associate of $$a$$ and we're done. But maybe $$f_i$$ is a non-constant polynomial $$b_ix^k + f'_i$$ where $$f'_i$$ is of degree $$<k$$. Since $$f_i$$ is irreducible and $$a | b_i$$, $$a$$ cannot divide $$f'_i$$. Now if we replace $$f_i$$ by $$f'_i$$ in the factorisation, that is the same thing as to subtract from $$f$$ the polynomial $$f_1*f_2*...*f_{i-1}*b_ix^k*{f_i+1}*...*f_s$$, which divides $$a$$ because $$b_i$$ does. We're left with a factorisation of some $$f'$$ of smaller degree, in which by the induction hypothesis $$a$$ finds an associate; this associate cannot be the new factor $$f'_i$$ because $$a$$ does not divide it, so it must be one of the original factors.
 
