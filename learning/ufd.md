@@ -7,7 +7,7 @@ title: UFD
     </script>
 </head>
 
-This is a direct proof, without using Gauss' Lemma, of the theorem that polynomial rings over a UFD
+This is a direct proof, without using Gauss's Lemma, of the theorem that a polynomial ring over a UFD
 is a UFD. The usual proof uses a lot of machinery: it goes over to the field of fractions of the
 original domain, then uses the result that *its* polynomial ring is a PID, therefore Euclidean,
 therefore a UFD, and then jumps back from unique factorisations in $$F[x]$$ to unique factorisations
@@ -18,20 +18,31 @@ where he adopts a direct proof by Zermelo of the Fundamental Theorem of Arithmet
 I thought another, similar direct proof of the FTA by ... might look even nicer when translated to UFDs.
 This is an attempt to write it up.
 
-**Theorem**. Let $$R$ be a UFD (unique factorisation domain). Then so is $$R[x]$$.
+**Theorem**. Let $$R$$ be a UFD (unique factorisation domain). Then so is $$R[x]$$.
 
 **Proof**. We need to establish existence and uniqueness of factorisations into irreducibles in $$R[x]$$.
 
-Existence. Let $$f(x) = a_nx^n + a_{n-1}x^{n-1} + ... + a_0$$, and if $$f$$ is not irreducible, we just
-proceed to reduce it: $$f = gh$$ with $g,h$ both non-units; then if either or both of $$g,h$$ are not
-irreducible, we expand them and so on. Will we ever stop? At every point we'll have some elements in
-the product that are in $$R$$, and some that are non-constant polynomials in $$R[x]$$. The number of the
-latter is limited by the degree of $$f$$, so there we will stop. As for the elements that are in $$R$$,
-their product must always all of $$f$$ and in particular $$a_0$$. Since $$R$$ is a UFD, all the elements
-of $$R$$ in an expanded product have unique factorisations, and all these together may only use up the
-irreducibles (up to associates) that are in the factorisation of $$a_0$$, no more. In particular there
-will not be more non-unit elements of $$R$$ in the expanded product than the number of irreducibles in
-$$a_0$$. So we will stop there, too, and the process will finish with a factorisation, as required.
+**Existence**. Let $$f(x) = a_nx^n + a_{n-1}x^{n-1} + ... + a_0$$, and if $$f$$ is not irreducible, we expand
+it: $$f = gh$$ with $$g,h$$ both non-units; then if either or both of $$g,h$$ are not
+irreducible, we expand them and so on. Will we ever stop?
+
+* At every point we'll have some elements in the product that are in $$R$$ ("the $$R$$ part"),
+and some that are non-constant polynomials in $$R[x]$$ ("the non-constant part").
+
+* The size of the non-constant part is limited, because every non-constant element is eating into
+the degree of $$f$$. Sso there we will stop.
+
+* The product of just the $$R$$ part must always divide all of $$f$$ and in particular $$a_0$$.
+Since $$R$$ is a UFD, all the elements of "the $$R$$ part" in an expanded product have unique factorisations,
+and all these together may only use up the irreducibles (up to associates) that are in the factorisation of $$a_0$$,
+no more. In particular there will not be more non-unit elements of $$R$$ in the expanded product than the number
+of irreducibles in $$a_0$$. So the size of the $$R$$ part is limited, and we will stop there, too.
+The process will finish with a factorisation, as required.
+
+**Uniqueness**. A polynomial in $$R[x]$$ is called *primitive* if the only members of $$R$$ that divide it
+(that is, divide its every coefficient) are the units. An irreducible polynomial must be primitive, but
+the converse is not necessarily true. Any non-constant polynomial $$f(x)$$ can be written as a product
+$$f(x) = af'(x)$$, where $$a \in R$$ (possibly a unit) and $$f'$$ is primitive: we just keep 
 
 Prove Gauss' Lemma.
 
