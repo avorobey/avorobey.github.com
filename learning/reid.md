@@ -1,11 +1,41 @@
 ---
-title: Lie Groups
+title: Undergraduate Commutative Algebra
 ---
 <head>
     <script type="text/javascript"
             src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
 </head>
+
+Prove Gauss' Lemma.
+
+Let $$A$$ be a UFD. $$f(x) \in A[x]$$ is called *primitive* if among elements of $A$ only units divide
+$$f(x)$$ (or all its coefficients simultaneously, which is the same thing). In other words, if 
+$$f(x) = a^nx^n+...+a^0$$, and $$s\in A$$ divides every $$a_i$$, then $$s$$ is a unit.
+
+Let $$f(x), g(x)$$ be two primitive polynomials. Prove that $$f(x)g(x)$$ is primitive.
+
+**Proof.** Let $$f(x) = a^nx^n+...+a^0, g(x) = b^mx^m+...+b^0. Let $$s\in A$$, and suppose
+that $$s$$ is not a unit and $$s | fg$$. As $$A$$ is a UFD, we can write $$s = s_1*...*s_k$$ a product
+of irreducibles, and any of them is still not a unit and divides $$fg$$. Therefore we can and so assume
+that $$s$$ is irreducible. 
+
+Since $$s$$ is not a unit and $$f,g$$ are primitive, $$s$$ cannot divide $$f$$
+If we can show that $$s | f$$ or $$s | g$$, then $$s$$ must be a unit because $$f$$ and $$f$$ are primitive,
+and that will be a cotradiction. So suppose that $$s \not | f$$, and we'll use that assumption to reach the
+conclusion that $$s | g$$.
+
+Now we want to establish that we can assume $$s \not | a_0$$. We know that there are some $$a_i$$
+not divisible by $$s$$ because $$f$$ is primitive and $$s$$ is not a unit. If $$a_i$$ is the lowest-order 
+coefficient in $$f$$ that does not divide $$s$$, we can discard from $$f$$ all the monomials that divide
+$$s$$ because their contribution to $$fg$$ also divides $$s$$: after discarding them it will still be true that
+$$s | fg$$. Then the lowest-order monomial in $$f$$ is now $$a_ix^i$$, and we can divide by $$x_i$$
+which again does not change disivisibility by $$s$$.
+
+Next, we can assume $$s$$ is irreducible: as $$A$$ is a UFD, we can write . Among $$s_i$$ at least one does not divide $$a_0$$, and it still divides $$fg$$, so we can use
+that as the new $$s$$. 
+
+
 
 $$\newcommand{\vect}[1]{\boldsymbol{#1}}$$ 
 **Задача.** Доказать, что не существует четырех точек на плоскости так, чтобы все попарные расстояния
