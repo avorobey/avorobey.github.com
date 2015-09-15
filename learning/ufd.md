@@ -50,7 +50,14 @@ First, we prove that any irreducible divisor of $$f$$ in $$R$$ is essential. Tha
 Let the leading coefficient of $$f_i$$ be $$b_i$$ (if $$f_i \in R$$, then $$b_i=f_i$$), so that the leading coefficient of
  $$f$$ is $$\prod{b_i}$$. $$R$$ is a UFD, so $$a$$ being irreducible means it's prime. Since $$a | f$$, $$a | \prod{b_i}$$,
 and since it's prime, $$a | b_i$$ for some $$i$$. If $$f_i \in R$$, then $$a | f_i$$, and being irreducible $$f_i$$ must
-be an associate of $$a$$ and we're done. But maybe $$f_i$$ is a non-constant polynomial $$b_ix^k + f'_i$$ where $$f'_i$$ is of degree $$<k$$. Since $$f_i$$ is irreducible and $$a | b_i$$, $$a$$ cannot divide $$f'_i$$. Now if we replace $$f_i$$ by $$f'_i$$ in the factorisation, that is the same thing as to subtract from $$f$$ the polynomial $$f_1*f_2*...*f_{i-1}*b_ix^k*f_{i+1}*...*f_k$$, which divides $$a$$ because $$b_i$$ does. We're left with a factorisation of some $$f'$$ of smaller degree, in which by the induction hypothesis $$a$$ finds an associate; this associate cannot be the new factor $$f'_i$$ because $$a$$ does not divide it, so it must be one of the original factors.
+be an associate of $$a$$ and we're done.
+But maybe $$f_i$$ is a non-constant polynomial $$b_ix^k + f'_i$$ where $$f'_i$$ is of degree $$<k$$.
+Since $$f_i$$ is irreducible and $$a | b_i$$, $$a$$ cannot divide $$f'_i$$.
+Now if we replace $$f_i$$ by $$f'_i$$ in the factorisation, that is the same thing as to subtract from $$f$$
+the polynomial $$f_1*f_2*...*f_{i-1}*b_ix^k*f_{i+1}*...*f_k$$, which divides $$a$$ because $$b_i$$ does.
+We're left with a factorisation of some $$f'$$ of smaller degree, in which by the induction hypothesis $$a$$
+finds an associate; this associate cannot be the new factor $$f'_i$$ because $$a$$ does not divide it, so it must
+be one of the original factors.
 
 Now any factorisation of $$f(x) \in R[x]$$ can be separated into two parts: "the $$R$$ part" of
 irreducible elements in $$R$$, and "the non-constant part" of non-constant irreducible polynomials. Each of
@@ -64,7 +71,13 @@ only into non-constant divisors, that will suffice to finish the proof.
 So now let $$f$$ be such a polynomial, and let $$b(x) = b_nx^n+...+b_0$$ be an irreducible divisor of $$f$$ of the smallest degree possible, which means that $$b(x)$$ is still non-constant. Let $$f(x) = f_1*...f_k$$ be any factorisation.
 If we find that $$b(x) | f_i$$ for some $$i$$, we're done. Actually, even if we show $$b(x) | c*f_i(x)$$ for some $$c\in R$$, that is also enough, because, given $$b(x)*c'(x) = f_i(x)*c$$, we can factor $$c'(x)$$ and use the argument above to discard the "$$R$$ parts" of both sides; after that the right side will be just $$f_i(x)$$ and the left will still have $$b(x)$$, so $$b(x) | f(x)$$ will be true, and being both irreducible they must be associates.
 
-Now consider some particular $$f_i$$, and let it have degree $$m$$ and a leading monomial $$cx^m$$. If we multiply $$f_i$$ by $$b_n$$, the leading coefficient of $$b$$, that will allow us to sort of "divide" the result by $$b$$ ("sort of" because we only match the highest monomial) and get "remainder" of lesser degree: $$b_n*f_i(x) = c*b(x)*x^{m-n} + r_i$$. Here $$b_n*f_i$$ and $$c*b*x^{m-n}$$ have the same leading monomial: $$b_n*c*x^m$$, so what remains, $$r_i$$, is of degree $$<m$$, possibly 0. Now if it happens that $$b(x)$$ divides that remainder, $$b(x) | r_i$$ (and this includes the case $$r_i=0$$), then $$b(x)$$ divides $$b_n*f_i(x)$$, and by the argument in the previous paragraph that is enough to conclude that $$f_i$$ and $$b(x)$$ are associates. If we're lucky, this will happen for some $$f_i$$. 
+Now consider some particular $$f_i$$, and let it have degree $$m$$ and a leading monomial $$cx^m$$.
+If we multiply $$f_i$$ by $$b_n$$, the leading coefficient of $$b$$, that will allow us to sort of "divide" the result
+by $$b$$ ("sort of" because we only match the highest monomial) and get "remainder" of lesser degree:
+$$b_n*f_i(x) = c*b(x)*x^{m-n} + r_i$$. Here $$b_n*f_i$$ and $$c*b*x^{m-n}$$ have the same leading monomial:
+$$b_n*c*x^m$$, so what remains, $$r_i$$, is of degree $$<m$$, possibly 0. Now if it happens that $$b(x)$$ divides
+that remainder, $$b(x) | r_i$$ (and this includes the case $$r_i=0$$), then $$b(x)$$ divides $$b_n*f_i(x)$$,
+and by the argument in the previous paragraph that is enough to conclude that $$f_i$$ and $$b(x)$$ are associates. If we're lucky, this will happen for some $$f_i$$. 
 
 So now suppose we're not so lucky and in all these equations we have "remainders" $$r_i$$ not divisible by $$b(x)$$. If we multiply these equations over all the $$f_i$$, then on the right side of the product all the summands will be multiples of $$b(x)$$ except possibly $$\prod{r_i}$$, and on the left side the $$f_i$$ will combine together to form the original $$f$$:
 
