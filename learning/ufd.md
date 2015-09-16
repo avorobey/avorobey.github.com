@@ -66,7 +66,11 @@ the polynomial $$f_1*f_2*...*f_{i-1}*b_ix^k*f_{i+1}*...*f_k$$, which is divisibl
 The result is a new polynomial $$f'$$, still a multiple of $$a$$, with a factorisation in which $$f_i$$ is replaced by $$f'_i$$
 and therefore $$f'$$ has a smaller degree than $$f$$. By the inductive hypothesis, $$f'$$ has uniquess of factorisation, so $$a$$ must be present as an associate in the factorisation. The new factor $$f'_i$$ cannot be that associate because $$a$$ does not divide it, so it must be one of the original factors.
 
-Now we deal with the second case, where $$f$$ does not have constant irreducible factors. Let $$b(x) = b_nx^n+...+b_0$$ be an irreducible divisor of $$f$$ of the smallest degree possible, and $$f(x) = f_1*...f_k$$ a factorisation. We can assume $$k>1$$. To show that $$b(x)$$ has an associate among $$f_i$$, it is enough to show $$b(x) | f_i(x)*c$$ for some $$c\in R$$, because $$f_i(x)*c$$ is of lower degree than $$f(x)$$, so it has uniqueness, and $$b(x)$$ cannot find an associate inside $$c$$, so its associate must be $$f_i(x)$$.
+Now we deal with the second case, where $$f$$ does not have constant irreducible factors. Let $$b(x) = b_nx^n+...+b_0$$ be
+ an irreducible divisor of $$f$$ of the smallest degree possible, and $$f(x) = f_1*...f_k$$ a factorisation.
+ We can assume $$k>1$$. To show that $$b(x)$$ has an associate among $$f_i$$, it is enough to show
+ $$b(x) | f_i(x)*c$$ for some $$c\in R$$, because $$f_i(x)*c$$ is of lower degree than $$f(x)$$, so it has uniqueness,
+ and $$b(x)$$ cannot find an associate inside $$c$$, so its associate must be $$f_i(x)$$.
 
 Now consider some particular $$f_i$$, and let it have degree $$m$$ and a leading monomial $$cx^m$$.
 If we multiply $$f_i$$ by $$b_n$$, the leading coefficient of $$b$$, that will allow us to sort of "divide" the result
