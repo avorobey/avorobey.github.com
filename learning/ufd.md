@@ -87,3 +87,6 @@ $$\prod{b_n*f_(x)} = b_n^k*\prod{f_i(x)} = b_n^k*f(x) = b(x)*A(x) + \prod{r_i}$$
 Since $$b(x)$$ divides $$f$$, we must have also $$b(x) \| \prod{r_i}$$. In the product of $$r_i$$ every factor is of degree strictly less than that of $$f_i$$, so the result is of degree less than $$f$$, and the inductive hypothesis applies. We can expand this product into a factorisation, and $$b(x)$$ will have an associate somewhere in it, meaning $$b(x)$$ must divide one of the $$r_i$$, which contradicts the assumption we made above.
 
 
+**Alternative uniqueness**. Let $$f(x) \in R[x]$$ be non-constant. We proved that $$f$$ has factorisations, and every factorisation must include a non-constant irreducible polynomial.
+Therefore we can safely define $$h(x)$$ to be a non-constant irreducible divisor of $$f(x)$$ of smallest possible degree. We aim to show that any factorisation of $$f$$ must include an associate of $$h$$. If we're able to show this, then given two factorisations of $$f$$, we can discard $$h$$ from both (adjusting up to a unit); since $$h$$ is non-constant, this will lower the degree and the inductive hypothesis finishes the proof (note that the basis of the induction is a constant $$f \in R$$, which works because $$R$$ is a UFD).
+
