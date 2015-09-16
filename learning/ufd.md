@@ -42,11 +42,19 @@ of irreducibles in $$a_0$$. So the size of the $$R$$ part is limited, and we wil
 The process will finish with a factorisation, as required.
 
 **Uniqueness**. Let $$f(x) \in R[x]$$, and suppose that $$h(x)$$ is an irreducible divisor of $$f(x)$$. Call
-$$h(x)$$ *essential* if in any factorisation $$f(x) = f_1*f_2*...*f_k$$ one of the factors $$f_i$$ must be an
-associate of $$h$$. The idea is that if we can show that $$f$$ has an essential divisor, then we can discard it from any two
-factorisations of $$f$$ and pass to a simpler $$f$$, enabling us to use induction.
+$$h(x)$$ *essential for $$f(x)$$* if in any factorisation $$f(x) = f_1*f_2*...*f_k$$ one of the factors $$f_i$$ must be an
+associate of $$h$$. Of course, if there's indeed uniqueness of factorisation, then every irreducible divisor is essential,
+but we're yet to prove this.
 
-First, we prove that any irreducible divisor of $$f$$ in $$R$$ is essential. That is, let $$a\in R$$ be irreducible, $$a | f(x)$$. Then $$a$$ finds an associate in any factorisation $$f = f_1*...*f_k$$. We prove this by induction on the degree of $$f$$.
+Suppose for a moment that we proved that every non-constant $$f(x)$$ has an essential divisor. This then suffices to prove
+uniqueness of factorisation, by induction on the degree of $$f$$. How? Given any two factorisations of $$f(x)$$, if $$h(x)$$
+is an essential divisor, it must be present in both. Discarding it in both and adjusting up to a unit, we get two shorter factorisations of $$f' = f/h$$. Now if $$h$$ is non-constant, then $$f'$$ is of a lower degree and we can apply the inductive hypothesis
+(the basis, when $$f$$ is constant, works because $$R$$ is a UFD). But even if $$h \in R$$, we can continue the process and
+discard now the essential divisor $$h'$$ of $$f'$$. By the argument made above in the existence proof, there's a limit to how many constant irreducible divisors of $$f$$ we can accumulate, so eventually the next essential divisor will be non-constant and will lower the degree.
+
+It remains to prove that every non-constant $$f(x)$$ indeed has an essential divisor. We will argue that any irreducible divisor *of the smallest degree possible* is essential. There are two different cases to take care of: if the smallest degree is $$0$$, then $$f$$ has constant irreducible divisors. If it's $$>0$$, then the only irreducible divisors are non-constant polynomials.
+
+In the first case, let $$a\in R$$ be irreducible, $$a | f(x)$$, and $$f = f_1*...*f_k$$ a factorisation. 
 Let the leading coefficient of $$f_i$$ be $$b_i$$ (if $$f_i \in R$$, then $$b_i=f_i$$), so that the leading coefficient of
  $$f$$ is $$\prod{b_i}$$. $$R$$ is a UFD, so $$a$$ being irreducible means it's prime. Since $$a | f$$, $$a | \prod{b_i}$$,
 and since it's prime, $$a | b_i$$ for some $$i$$. If $$f_i \in R$$, then $$a | f_i$$, and being irreducible $$f_i$$ must
@@ -54,22 +62,11 @@ be an associate of $$a$$ and we're done.
 But maybe $$f_i$$ is a non-constant polynomial $$b_ix^k + f'_i$$ where $$f'_i$$ is of degree $$<k$$.
 Since $$f_i$$ is irreducible and $$a | b_i$$, $$a$$ cannot divide $$f'_i$$.
 Now if we replace $$f_i$$ by $$f'_i$$ in the factorisation, that is the same thing as to subtract from $$f$$
-the polynomial $$f_1*f_2*...*f_{i-1}*b_ix^k*f_{i+1}*...*f_k$$, which divides $$a$$ because $$b_i$$ does.
-We're left with a factorisation of some $$f'$$ of smaller degree, in which by the induction hypothesis $$a$$
-finds an associate; this associate cannot be the new factor $$f'_i$$ because $$a$$ does not divide it, so it must
-be one of the original factors.
+the polynomial $$f_1*f_2*...*f_{i-1}*b_ix^k*f_{i+1}*...*f_k$$, which is divisible by $$a$$ because $$b_i$$ is.
+The result is a new polynomial $$f'$$, still a multiple of $$a$$, with a factorisation in which $$f_i$$ is replaced by $$f'_i$$
+and therefore $$f'$$ has a smaller degree than $$f$$. By the inductive hypothesis, $$f'$$ has uniquess of factorisation, so $$a$$ must be present as an associate in the factorisation. The new factor $$f'_i$$ cannot be that associate because $$a$$ does not divide it, so it must be one of the original factors.
 
-Now any factorisation of $$f(x) \in R[x]$$ can be separated into two parts: "the $$R$$ part" of
-irreducible elements in $$R$$, and "the non-constant part" of non-constant irreducible polynomials. Each of
-the parts can be trivial (of length 0). By what we just proved, if we have two factorisations of $$f$$ with 
-a nontrivial $$R$$ part in at least one of them, we can take one by one irreducible divisors from the $$R$$ part
-and match them with associates in the other factorisation, then discard them both (adjusting what remains up to a unit).
-After a number of steps both factorisations must simultaneously end up with trivial $$R$$ parts, and no other factorisation
-of this new $$f$$ may have a non-trivial $$R$$ part. Therefore if we show uniqueness only for such polynomials that factor
-only into non-constant divisors, that will suffice to finish the proof.
-
-So now let $$f$$ be such a polynomial, and let $$b(x) = b_nx^n+...+b_0$$ be an irreducible divisor of $$f$$ of the smallest degree possible, which means that $$b(x)$$ is still non-constant. Let $$f(x) = f_1*...f_k$$ be any factorisation.
-If we find that $$b(x) | f_i$$ for some $$i$$, we're done. Actually, even if we show $$b(x) | c*f_i(x)$$ for some $$c\in R$$, that is also enough, because, given $$b(x)*c'(x) = f_i(x)*c$$, we can factor $$c'(x)$$ and use the argument above to discard the "$$R$$ parts" of both sides; after that the right side will be just $$f_i(x)$$ and the left will still have $$b(x)$$, so $$b(x) | f(x)$$ will be true, and being both irreducible they must be associates.
+Now we deal with the second case, where $$f$$ does not have constant irreducible factors. Let $$b(x) = b_nx^n+...+b_0$$ be an irreducible divisor of $$f$$ of the smallest degree possible, and $$f(x) = f_1*...f_k$$ a factorisation. We can assume $$k>1$$. To show that $$b(x)$$ has an associate among $$f_i$$, it is enough to show $$b(x) | f_i(x)*c$$ for some $$c\in R$$, because $$f_i(x)*c$$ is of lower degree than $$f(x)$$, so it has uniqueness, and $$b(x)$$ cannot find an associate inside $$c$$, so its associate must be $$f_i(x)$$.
 
 Now consider some particular $$f_i$$, and let it have degree $$m$$ and a leading monomial $$cx^m$$.
 If we multiply $$f_i$$ by $$b_n$$, the leading coefficient of $$b$$, that will allow us to sort of "divide" the result
@@ -83,6 +80,6 @@ So now suppose we're not so lucky and in all these equations we have "remainders
 
 $$\prod{b_n*f_(x)} = b_n^k*\prod{f_i(x)} = b_n^k*f(x) = b(x)*A(x) + \prod{r_i}$$
 
-Since $$b(x)$$ divides $$f$$, we must have also $$b(x) \| \prod{r_i}$$, that is $$b(x)*c'(x) = \prod(r_i)$$ for some $$c'(x) \in R[x]$$. In the product of $$r_i$$ every factor is of degree strictly less than that of $$f_i$$, so the result is of degree less than $$f$$. We can now expand this product into a factorisation, and get rid of all the $$R$$ parts on both sides via the same argument as before, which will still leave $$b(x)$$ as in irreducible divisor. The inductive hypothesis now shows that $$b(x)$$ finds an associate somewhere in this factorisation, which means it divides one of the $$r_i$$, which contradicts the assumption we made above.
+Since $$b(x)$$ divides $$f$$, we must have also $$b(x) \| \prod{r_i}$$. In the product of $$r_i$$ every factor is of degree strictly less than that of $$f_i$$, so the result is of degree less than $$f$$, and the inductive hypothesis applies. We can expand this product into a factorisation, and $$b(x)$$ will have an associate somewhere in it, meaning $$b(x)$$ must divide one of the $$r_i$$, which contradicts the assumption we made above.
 
 
