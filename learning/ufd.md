@@ -7,6 +7,12 @@ title: UFD
     </script>
 </head>
 
+This note analyzes factorization in polynomial rings, focusing on different approaches towards the proof of
+the following basic and important theorem.
+
+**Theorem**. Let $$R$$ be a UFD (unique factorisation domain). Then so is $$R[x]$$.
+
+Theorem
 This is a direct proof, without using Gauss's Lemma, of the theorem that a polynomial ring over a UFD
 is a UFD. The usual proof uses a lot of machinery: it goes over to the field of fractions of the
 original domain, then uses the result that *its* polynomial ring is a PID, therefore Euclidean,
@@ -24,8 +30,8 @@ This is an attempt to write it up.
 
 **Existence**. Let $$f(x) = a_nx^n + a_{n-1}x^{n-1} + ... + a_0$$, and if $$f$$ is not irreducible, we expand
 it: $$f = gh$$ with $$g,h$$ both non-units; then if either or both of $$g,h$$ are not
-irreducible, we expand them and so on. If we can't expand any more and stop, we have a factorisation into irreducibles.
 Will we always stop?
+irreducible, we expand them and so on. If we can't expand any more and stop, we have a factorisation into irreducibles.
 
 * At every point we'll have some elements in the product that are in $$R$$ ("the $$R$$ part"),
 and some that are non-constant polynomials in $$R[x]$$ ("the non-constant part").
