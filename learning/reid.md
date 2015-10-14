@@ -30,3 +30,7 @@ $$X$$ is not in $$I$$ - otherwise by its minimality $$I=(X)$$. Similarly $$Y \no
 is $$aXY$$, and by primality $$a \in I$$, so we must have $$a=0$$, and the element is really $$f(X)X+g(Y)Y$$. Now multiply by $$X$$
 to get rid of the $$Y$$-part, and using the primality of $$I$$ keep removing factors of $$X$$ from the $$X$$-part. Since we can't end up
 with any nonzero constant part (by the above argument that $$a=0$$), we must finish with plain $$X \in I$$, achieving the contradiction.
+
+a) $$IJ = I\cup J$$. Take $$I=J=(X)$$.
+b) $$(I+J)(I\cup J) = IJ$$. Take $$I=(X)$$, $$J=(X+1)$$. Then $$I+J = A$$, I\cup J = 0, IJ=(X(X+1))$$.
+c) I\cup (J+K) = (I \cup J) + (I \cup K). 
