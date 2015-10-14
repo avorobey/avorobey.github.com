@@ -27,7 +27,7 @@ in either case we want to deduce $$a' = g' = 0$$, so that the other factor is in
 First case: $$a \ne 0$$, then $$a' = 0$$ and
 $$ag' + gg'Y = g'(a+gY) = 0$$. Since $$a \ne 0$$, the polynomial $$a+gY$$ is definitely nonzero, so $$g'=0$$ as required.
 
-Second case: $$g \ne 0$$, and we can assume $$a=0$$ because otherwise it's the previous case; then $$g(a'+gg'Y)=0$$, and so
-$$a'+gg'Y = 0$, from which $$a'=0, gg'=0, g'=0$$ follow immediately.
+Second case: $$g \ne 0$$, and we can assume $$a=0$$ because otherwise it's the previous case; then $$g(a'+g'Y)=0$$, and so
+$$a'+g'Y = 0$$, from which $$a'=0, g'=0$$ follow immediately.
 
 $$(Y)$$ is prime for the same reason. 
