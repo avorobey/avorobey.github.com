@@ -20,14 +20,13 @@ $$a-a' + (f-f')X + (g-g')Y \in (XY)$$, meaning $$X | (a-a') + (g-g')Y$$ which fo
 
 Products are straightforward: $$(a + f(X)X + g(Y)Y)(a'+f'(X)X+g'(Y)Y) = aa' + (a'f+af'+ff'X)X + (a'g + ag' + gg'Y)Y$$.
 
-$$A$$ has two minimal  prime ideals $$(X)$$ and $$(Y)$$. To show $$(X)$$ is prime, assume the product above is in $$(X)$$, which means
-that $$aa' = a'g+ag'+gg'Y = 0$$. Assume the first factor is not in $$(X)$$, which means $$a \ne 0$$ or $$g \ne 0$$ (or both), and
-in either case we want to deduce $$a' = g' = 0$$, so that the other factor is in $$(X)$$. 
+$$A$$ has two minimal  prime ideals $$(X)$$ and $$(Y)$$. For example, $$(X)$$ is prime, because $$A/(X)$$ is isomorphic to $$k[Y]$$
+(using the representation above) and therefore a domain. $$(X)$$ is minimal, because if $$I \subset (X)$$ is a prime ideal, consider
+any element of $$I$$, and represent it as $$X^k*f(X,Y)$$, where $$f$$ is not in $$(X)$$. By primality of $$I$$, $$X^k$$ and then $$X$$
+are in $$I$$.
 
-First case: $$a \ne 0$$, then $$a' = 0$$ and
-$$ag' + gg'Y = g'(a+gY) = 0$$. Since $$a \ne 0$$, the polynomial $$a+gY$$ is definitely nonzero, so $$g'=0$$ as required.
-
-Second case: $$g \ne 0$$, and we can assume $$a=0$$ because otherwise it's the previous case; then $$g(a'+g'Y)=0$$, and so
-$$a'+g'Y = 0$$, from which $$a'=0, g'=0$$ follow immediately.
-
-$$(Y)$$ is prime for the same reason. 
+Suppose some other $$I$$ is a minimal prime ideal in $$A$$, and let $$a+f(X)X+g(Y)Y$$ be a nonzero element of $$I$$. We assume that
+$$X$$ is not in $$I$$ - otherwise by its minimality $$I=(X)$$. Similarly $$Y \notin I$$. Multiply the element by $$XY$$, then all that's left
+is $$aXY$$, and by primality $$a \in I$$, so we must have $$a=0$$, and the element is really $$f(X)X+g(Y)Y$$. Now multiply by $$X$$
+to get rid of the $$Y$$-part, and using the primality of $$I$$ keep removing factors of $$X$$ from the $$X$$-part. Since we can't end up
+with any nonzero constant part (by the above argument that $$a=0$$), we must finish with plain $$X \in I$$, achieving the contradiction.
