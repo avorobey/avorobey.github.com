@@ -41,11 +41,12 @@ c) $$I\cap (J+K) = (I \cap J) + (I \cap K)$$. Take $$I=(X), J=(X+1), K=(X+2)$$. 
 Euclidean domains, the GCD of two elements is expressible as their linear combination, and therefore $$a,b$$ are co-prime iff $$(a)+(b)=(1)$$.
 
 Given $$I+J=A$$, we have $$I\cap J = (I\cap J)(I+J) \subseteq (I\cap J)I + (I\cap J)J \subseteq JI + IJ = IJ$$. The other direction is trivial.
-Now suppose $$a+IJ \in A/IJ$$. We define the image of $$a$$ in $$(A/I)\times (A/J)$$ as $$(a+I,a+J)$$. We need to prove:
+Now suppose $$a+IJ \in A/IJ$$. We define the image of $$a+IJ$$ in $$(A/I)\times (A/J)$$ to be $$(a+I,a+J)$$. We need to prove:
 
 - this is well-defined: if $$a+IJ = a'+IJ$$, then $$a-a'\in IJ$$. Then *a fortiori* $$a-a' \in I, J$$, so $$a+I=a'+I, a+J=a'+J$$.
 - this is a homomorphism of rings: trivial.
-- this is 1-1: if $$a+IJ \ne 0$$, then $$a \notin IJ$$, and so certainly $$a \notin I$$ and $$a+I \ne 0$$, same with $$J$$.
+- this is 1-1: if $$a+IJ \ne 0$$, then $$a \notin IJ$$. We know that $$IJ=I\cap J$$, so $$a$$ cannot be in both $$I$$ and $$J$$. Therefore
+$$a+I$$ or $$a+J$$ is nonzero.
 - this is onto: given $$b,c \in A$$, we need to find $$a\in A$$ such that $$a-b \in I, a-c\in J$$. Since $$I+J=A$$, we have $$i,j \in I,J$$
 such that $$-i+j=b-c$$. Then $$b+i=c+j$$, and we can take $$a=b+i=c+j$$.
 
