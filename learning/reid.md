@@ -36,3 +36,24 @@ a) $$IJ = I\cap J$$. Take $$I=J=(X)$$.
 b) $$(I+J)(I\cap J) = IJ$$. Take $$I=(X)$$, $$J=(X+1)$$. Then $$I+J = A$$, I\cap J = 0, IJ=(X(X+1))$$.
 
 c) $$I\cap (J+K) = (I \cap J) + (I \cap K)$$. Take $$I=(X), J=(X+1), K=(X+2)$$. The left-hand side is $$I$$, the right-hand-side is $$0$$.
+
+1.4. The usual notion of coprime in $$Z$$ or $$k[X]$$ is: $$a,b$$ are co-prime if $$g.c.d.(a,b)=1$. But since both $$Z$$ and $$k[X]$$ are
+Euclidean domains, the GCD of two elements is expressible as their linear combination, and therefore $$a,b$$ are co-prime iff $$(a)+(b)=(1)$$.
+
+Given $$I+J=A$$, we have $I\cap J$$ = (I\cap J)(I+J) \subseteq (I\cap J)I + (I\cap J)J \subseteq JI + IJ = IJ$$. The other direction is trivial.
+Now suppose $$a+IJ \in A/IJ$$. We define the image of $$a$$ in $$(A/I)\times (A/J)$$ as $$(a+I,a+J)$$. We need to prove:
+
+- this is well-defined: if $$a+IJ = a'+IJ$$, then $$a-a'\in IJ$$. Since $$IJ = I\cap J$$ by the above, we have $$a-a' \in I$$ and $$a+I=a'+I$$,
+likewise with $$J$$.
+- this is a homomorphism of rings: trivial.
+- this is 1-1: if $$a+IJ \ne 0$$, then $$a \notin IJ$$, and so certainly $$a \notin I$$ and $$a+I \ne 0$$, same with $$J$$.
+- this is onto: given $$b,c \in A$$, we need to find $$a\in A$$ such that $$a-b \in I, a-c\in J$$. Since $$I+J=A$$, we have $$i,j \in I,J$$
+such that $$-i+j=b-c$$. Then $$b+i=c+j$$, and we can take $$a=b+i=c+j$$.
+
+Suppose $$I+J=A$$ and we want to prove $$I^n+J^n  = A$$. It suffices to prove $$I^n+J=A$$ because then we can pretend $$I^n$$ is the
+new $$I$$ and carry out the same argument for $$J$$. Since $$I+J=A$$, we have $$a+b=1$$ for $$a \in I, b \in J$$. It's enough to show that
+$$a^n + b' = 1$$ for some $$b'\in J$$. But the difference between $$a$$ and $$a^n$$ is $$a(a^{n-1}-1)$$ and is divisible by $$1-a = b \in J$$,
+so the entire difference is in $$J$$. Therefore if we replace $$a$$ by $$a^n$$, we need only adjust $$b$$ by something in $$J$$ to keep the same
+sum $$1$$.
+
+1.5. 
