@@ -33,7 +33,7 @@ with any nonzero constant part (by the above argument that $$a=0$$), we must fin
 
 a) $$IJ = I\cap J$$. Take $$I=J=(X)$$.
 
-b) $$(I+J)(I\cap J) = IJ$$. Take $$I=(X)$$, $$J=(X+1)$$. Then $$I+J = A$$, I\cap J = 0, IJ=(X(X+1))$$.
+b) $$(I+J)(I\cap J) = IJ$$. Take $$I=(X)$$, $$J=(X+1)$$. Then $$I+J = A, I\cap J = 0, IJ=(X(X+1))$$.
 
 c) $$I\cap (J+K) = (I \cap J) + (I \cap K)$$. Take $$I=(X), J=(X+1), K=(X+2)$$. The left-hand side is $$I$$, the right-hand-side is $$0$$.
 
