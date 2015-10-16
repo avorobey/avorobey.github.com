@@ -37,14 +37,13 @@ b) $$(I+J)(I\cap J) = IJ$$. Take $$I=(X)$$, $$J=(X+1)$$. Then $$I+J = A$$, I\cap
 
 c) $$I\cap (J+K) = (I \cap J) + (I \cap K)$$. Take $$I=(X), J=(X+1), K=(X+2)$$. The left-hand side is $$I$$, the right-hand-side is $$0$$.
 
-1.4. The usual notion of coprime in $$Z$$ or $$k[X]$$ is: $$a,b$$ are co-prime if $$g.c.d.(a,b)=1$. But since both $$Z$$ and $$k[X]$$ are
+1.4. The usual notion of coprime in $$Z$$ or $$k[X]$$ is: $$a,b$$ are co-prime if $$g.c.d.(a,b)=1$$. But since both $$Z$$ and $$k[X]$$ are
 Euclidean domains, the GCD of two elements is expressible as their linear combination, and therefore $$a,b$$ are co-prime iff $$(a)+(b)=(1)$$.
 
-Given $$I+J=A$$, we have $I\cap J$$ = (I\cap J)(I+J) \subseteq (I\cap J)I + (I\cap J)J \subseteq JI + IJ = IJ$$. The other direction is trivial.
+Given $$I+J=A$$, we have $$I\cap J = (I\cap J)(I+J) \subseteq (I\cap J)I + (I\cap J)J \subseteq JI + IJ = IJ$$. The other direction is trivial.
 Now suppose $$a+IJ \in A/IJ$$. We define the image of $$a$$ in $$(A/I)\times (A/J)$$ as $$(a+I,a+J)$$. We need to prove:
 
-- this is well-defined: if $$a+IJ = a'+IJ$$, then $$a-a'\in IJ$$. Since $$IJ = I\cap J$$ by the above, we have $$a-a' \in I$$ and $$a+I=a'+I$$,
-likewise with $$J$$.
+- this is well-defined: if $$a+IJ = a'+IJ$$, then $$a-a'\in IJ$$. Then *a fortiori* $$a-a' \in I, J$$, so $$a+I=a'+I, a+J=a'+J$$.
 - this is a homomorphism of rings: trivial.
 - this is 1-1: if $$a+IJ \ne 0$$, then $$a \notin IJ$$, and so certainly $$a \notin I$$ and $$a+I \ne 0$$, same with $$J$$.
 - this is onto: given $$b,c \in A$$, we need to find $$a\in A$$ such that $$a-b \in I, a-c\in J$$. Since $$I+J=A$$, we have $$i,j \in I,J$$
