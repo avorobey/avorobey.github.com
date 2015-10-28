@@ -5,6 +5,11 @@ title: Fields Arithmetic
     <script type="text/javascript"
             src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
+    <style>
+      p {
+        width: 960px;
+      }  
+    </style>
 </head>
 
 Oct 26, 2015
