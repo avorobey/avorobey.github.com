@@ -21,7 +21,7 @@ and the group-theoretic properties of their Galois groups. Given a field $$K$$, 
 at the Galois group of some extension, $$\text{Gal}(N/K)$$, or even the absolute Galois group (to
 be defined later) $$G(K)$$. What can be said about the connections between them?
 
-A trivial example. $$\text{Gal}(K)==1$$ means there are no symmetries of roots of irreducible polynomials
+A trivial example. $$\text{Gal}(K)=1$$ means there are no symmetries of roots of irreducible polynomials
 $$\iff$$ $$K$$ is separably closed, meaning $$K$$ has no nontrivial separable extensions.
 
 (Note: this isn't the same thing as $$K$$ being algebraically closed. An example to illustrate this:
@@ -34,7 +34,7 @@ Less trivial example. If $$\text{Gal}(K)$$ is finite and nontrivial, what does t
 example, $$\text{Gal}(R)=Z/2Z$$, because the only automorphisms of $$C$$ that fix $$R$$ are $$1$$
 and complex conjugation. 
 
-Theorem (Artin-Schreier). $$1 < |\text{Gal}(K)| < \infty \iff$$
+Theorem (Artin-Schreier). $$A_1 < |\text{Gal}(K)| < \infty \iff$$
 
 1. $$\text{char}K = 0$$.
 2. There's an order on $$K$$ and $$K$$ is closed under that order (meaning every positive element has a square root).
