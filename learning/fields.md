@@ -34,13 +34,7 @@ Less trivial example. If $$\text{Gal}(K)$$ is finite and nontrivial, what does t
 example, $$\text{Gal}(R)=Z/2Z$$, because the only automorphisms of $$C$$ that fix $$R$$ are $$1$$
 and complex conjugation. 
 
-Theorem (Artin-Schreier). $$1 < |\text{Gal}(K)| < \infty \iff$$
-
-	Theorem (Artin-Schreier). $$A_1 < |\text{Gal}(K)| $$
-Theorem (Artin-Schreier). $$A_1 < $$
-Theorem (Artin-Schreier). $$A_1 < \text{Gal}(K) < \infty \iff$$
-Theorem (Artin-Schreier). $$A_1 < |\text{Gal}(K)| < \infty \iff$$
-Theorem (Artin-Schreier). $$A_1 < |\text{Gal}(K)| < \infty \iff$$
+Theorem (Artin-Schreier). $$\text{Gal}(K) is finite and nontrivial $$\iff$$
 
 1. $$\text{char}K = 0$$.
 2. There's an order on $$K$$ and $$K$$ is closed under that order (meaning every positive element has a square root).
