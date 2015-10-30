@@ -71,7 +71,7 @@ The field $$Q^{\text{tot,R}}(\sqrt{-1})$$ is PAC (a theorem by Monet and Pop).
 
 Example 2. $$\text{Gal}(Q)$$ is a topological group (we won't discuss the topology now), and it's compact. Therefore there's a Haar measure
 on it which is a probability measure. Theorem: with probability 1, if we choose $$\sigma_1, \dots, \sigma_n \in \text{Gal}(Q)$$, then their
-common fixed field $$Q(\underline{\sigma}} = \{x \in \tilde{Q}: x =\sigma_1(x)=\dots = \sigma_n(x)\}$$ is a PAC (a theorem by Jarden).
+common fixed field $$Q(\underline{\sigma}) = \{x \in \tilde{Q}: x =\sigma_1(x)=\dots = \sigma_n(x)\}$$ is a PAC (a theorem by Jarden).
 
 Next we discuss "Hilbertian", which is an arithmetical property of the field, as opposed to PAC which is a geometric property.
 
@@ -89,6 +89,15 @@ Example. $$Q_p$$ (the $$p$$-adics) is not Hilbertian.
 
 Hilber's Irreducibility Theorem: $$Q$$ is Hilbertian (and so is any number field = a finite extension of $$Q$$).
 
+Example of an application of Hilbert's Irreducibility theorem. Does the ring $$Q[x]$$ satisfy the Dirichlet theorem for arithmetical series,
+that is, is it true that for every $$a,b \in Q[x]$$ co-prime there's $$c \in Q[x]$$ such that $$a(x)+cb(x)$$ is irreducible?
+
+Answer: yes. Assuming $$a,b$$ are co-prime, $$a(x)+Yb(x)$$ is irreducible, and so by Hilbert's Irreducibility Theorem there's an infinite number
+of $$c\in Q$$ (a fortiori $$\in Q[x]$$) so that $$a(x)+cb(x)$$ is irreducible.
+
+(Note: here we started from $$a+Yb$$ being irreducible in $$Q(X)[Y]$$, and applying Gauss's Lemma twice, moved to irreducibility in $$Q[X,Y]$$
+and then in $$Q(Y)[X]$$ which is what we need to apply the theorem).
+
 Another positive example: A function field, say $$K_0(t)$$ over a  base field $$K_0$$, is Hilbertian. This breaks down to two cases:
 
 If $$K_0$$ is finite, the proof is analogous to Hilbert's Irreducibility Theorem.
@@ -96,10 +105,16 @@ If $$K_0$$ is finite, the proof is analogous to Hilbert's Irreducibility Theorem
 If $$K_0$$ is infinite, this is a consequence of a theorem by Bertini: if there's a variety and an irreducible hyperplane intersecting it, then
 for almost any hyperplane we choose (apart from a finite number of exceptions) the intersection is irreducible.
 
-Example. $$Q^{\text{cycl}}$$, which is $$Q(e^{\frac{2\pi i}{r}}: r=1,2,\dots), is Hilbertian (result by Kuyk).
+Example. $$Q^{\text{cycl}}$$, which is $$Q(e^{\frac{2\pi i}{r}}: r=1,2,\dots)$$, is Hilbertian (result by Kuyk).
 
-Example of an application of Hilbert's Irreducibility theorem
+Exercize: $$Q^{\text{sol}}$$ is the composition in $$C$$ of all the finite extensions $$N/Q$$ with a solvable Galois group. Prove that $$Q^{\text{sol}}$$
+is not Hilbertian. This can be proved directly or using what the Galois theorem says about a solvable extension.
 
+Another positive example. Theorem by Weissover(?): If $$K$$ is Hilbertian, $$N/K$$ a Galois extension (finite or infinite), then every proper extension of $$N$$
+is Hilbertian. (Note: even though $$N$$ itself might well not be!). So for example any finite extension of $$Q^{\text{sol}}$$ above is Hilbertian. The field
+$$Q^{\text{tot,R}}(\sqrt{-1})$$ mentioned above in the PAC section is a finite extension of $$Q^{\text{tot,R}}$$, and so is Hilbertian.
+
+Now we discuss "$$\omega$$-free", and although this is a group-theoretic property, we give a field theory definition. 
 
 
 
