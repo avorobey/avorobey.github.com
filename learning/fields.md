@@ -84,8 +84,21 @@ an open dense set) and $$C$$ is irreducible, there's an infinite number of $$a \
 Example. An algebraically closed field is not Hilbertian. In some sense "Hilbertian" is almost opposed to "algebraically closed".
 
 Example. $$R$$ is not Hilbertian, for example consider $$Y^3-X$$ or any other polynomial of degree 3.
+
 Example. $$Q_p$$ (the $$p$$-adics) is not Hilbertian.
 
+Hilber's Irreducibility Theorem: $$Q$$ is Hilbertian (and so is any number field = a finite extension of $$Q$$).
+
+Another positive example: A function field, say $$K_0(t)$$ over a  base field $$K_0$$, is Hilbertian. This breaks down to two cases:
+
+If $$K_0$$ is finite, the proof is analogous to Hilbert's Irreducibility Theorem.
+
+If $$K_0$$ is infinite, this is a consequence of a theorem by Bertini: if there's a variety and an irreducible hyperplane intersecting it, then
+for almost any hyperplane we choose (apart from a finite number of exceptions) the intersection is irreducible.
+
+Example. $$Q^{\text{cycl}}$$, which is $$Q(e^{\frac{2\pi i}{r}}: r=1,2,\dots), is Hilbertian (result by Kuyk).
+
+Example of an application of Hilbert's Irreducibility theorem
 
 
 
