@@ -114,7 +114,22 @@ Another positive example. Theorem by Weissover(?): If $$K$$ is Hilbertian, $$N/K
 is Hilbertian. (Note: even though $$N$$ itself might well not be!). So for example any finite extension of $$Q^{\text{sol}}$$ above is Hilbertian. The field
 $$Q^{\text{tot,R}}(\sqrt{-1})$$ mentioned above in the PAC section is a finite extension of $$Q^{\text{tot,R}}$$, and so is Hilbertian.
 
-Now we discuss "$$\omega$$-free", and although this is a group-theoretic property, we give a field theory definition. 
+Now we discuss "$$\omega$$-free", and although this is a group-theoretic property, we give a field theory definition. We'll say $$\text{Gal}(K)$$ is $$\omega$$-free
+if given any two finite groups $$G,H$$ and an epimorphism $$\phi:G \to H$$ and a finite Galois extension $$L/K$$ with $$\text{Gal}(L/K)\cong H$$, there exists a Galois
+extension $$N/K$$ with $$\text{Gal}(N/K) \cong G$$ and the restriction map from $$\text{Gal}(N/K)$$ to $$\text{Gal}(L/K)$$ corresponds to $$\phi$$ under these
+isomorphisms.
+
+The case $$H=1$$ shows that the inverse Galois problem is solvable under a Hilbertian PAC field. Unfortunately, $$Q$$ is not PAC.
+
+We noted earlier that $$Q^{tot,R}(\sqrt{-1})$$ is noth PAC and Hilbertian, so we can conclude that $$\text{Gal}(Q^{tot,R}(\sqrt{-1}))$$ is $$\omega$$-free, that is
+free in the category of profinite groups (? not sure I wrote that down right).
+
+Open problem: What can be said about $$\text{Gal}(Q)$$? We don't even know what its continuous finite quotient groups are.
+
+Open problem: Is $$Q^{\text{sol}}$$ PAC?
+
+Infinite Galois Theory
+
 
 
 
