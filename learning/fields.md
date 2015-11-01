@@ -136,7 +136,7 @@ Open problem: Is $$Q^{\text{sol}}$$ PAC?
 
 ## Infinite Galois Theory
 
-Goal: Extend Galois theory to infinite extensions.
+### Goal: Extend Galois theory to infinite extensions.
 
 Let $$L/K$$ be an algebraic extension. We'll say that $$L/K$$ is separable if $$L = \bigcup_{i \in I}{L_i}$$ and each $$L_i$$ is separable.
 Similarly, $$L/K$$ is normal/Galois if it's a union of finite normal/Galois extensions. Clearly, $$L/K$$ is Galois iff it's separable and normal.
@@ -158,19 +158,19 @@ $$K^{\text{ab}}/K$$ is Galois.
 (even an infinite one) with an abelian Galois group is in $$K^{\text{ab}}$$.
 
 
-**Exercise**. $$L = Q(\sqrt(p) | p \text{ is prime}). Prove that $$\text{Gal}(L/Q) = (Z/2Z)^{\aleph_0}$$.
+**Exercise**. $$L = Q(\sqrt(p) | p \text{ is prime})$$. Prove that $$\text{Gal}(L/Q) = (Z/2Z)^{\aleph_0}$$.
 
-Fundamental Theorem of Galois Theory
+### Fundamental Theorem of Galois Theory
 
-Example of why it fails in infintie exntesions
+### Example of why it fails in infintie exntesions
 
 Second example
 
-Krull topology
+### Krull topology
 
 **Exercise**. Prove that the above defines a basis for a topology.
 
-Proving the Fundamental Theorem of Galois Theory
+### Proving the Fundamental Theorem of Galois Theory
 
 
 
