@@ -111,7 +111,7 @@ for almost any hyperplane we choose (apart from a finite number of exceptions) t
 
 Example. $$Q^{\text{cycl}}$$, which is $$Q(e^{\frac{2\pi i}{r}}: r=1,2,\dots)$$, is Hilbertian (result by Kuyk).
 
-Exercize: $$Q^{\text{sol}}$$ is the composition in $$C$$ of all the finite extensions $$N/Q$$ with a solvable Galois group. Prove that $$Q^{\text{sol}}$$
+**Exercise**: $$Q^{\text{sol}}$$ is the composition in $$C$$ of all the finite extensions $$N/Q$$ with a solvable Galois group. Prove that $$Q^{\text{sol}}$$
 is not Hilbertian. This can be proved directly or using what the Galois theorem says about a solvable extension.
 
 Another positive example. Theorem by Weissover(?): If $$K$$ is Hilbertian, $$N/K$$ a Galois extension (finite or infinite), then every proper extension of $$N$$
@@ -138,7 +138,7 @@ Open problem: Is $$Q^{\text{sol}}$$ PAC?
 
 Goal: Extend Galois theory to infinite extensions.
 
-Let $$L/K$$ be an algebraic extension. We'll say that $$L/K$$ is separable if $$L = \cup_{i \in I}{L_i}$$ and each $$L_i$$ is separable.
+Let $$L/K$$ be an algebraic extension. We'll say that $$L/K$$ is separable if $$L = \bigcup_{i \in I}{L_i}$$ and each $$L_i$$ is separable.
 Similarly, $$L/K$$ is normal/Galois if it's a union of finite normal/Galois extensions. Clearly, $$L/K$$ is Galois iff it's separable and normal.
 
 Definition. $$\text{Gal}(L/K) = \{ \sigma \in L: \text{\sigma is an automorphism of }L \text{ constant on }K \} = \text{Aut}_k(L)$$
@@ -147,8 +147,30 @@ Example 1. $$K^{\text{sep}} = \{ x \in \tilde{K}: x\text{'s irreducible polynomi
 
 $$K^{\text{sep}}$$ is Galois. That it's separable is clear, and it's normal because if an element is separable, so are all its conjugates.
 
+Definition. $$\text{Gal}(K) = \text{Gal}(K^{\text{sep}}/K) = Aut_K(\tilde{K}).
+
+**Exercise**: Explain the last equality above - why can we move from $$K^{\text{sep}}$$ to $$\tilde{K}$$?
+
+Example. The maximal abelian extension of $$K$$: $$K^{\text{ab}} = \bigcup_{L/K}L$$ over all finite Galois extensions with abelian Galois groups.
+$$K^{\text{ab}}/K$$ is Galois.
+
+**Exercise**. $$\text{Gal}(K^{\text{ab}})$$ is abelian, and $$K^{\text{ab}}$$ is maximal under this property, i.e. any other extension
+(even an infinite one) with an abelian Galois group is in $$K^{\text{ab}}$$.
 
 
+**Exercise**. $$L = Q(\sqrt(p) | p \text{ is prime}). Prove that $$\text{Gal}(L/Q) = (Z/2Z)^{\aleph_0}$$.
+
+Fundamental Theorem of Galois Theory
+
+Example of why it fails in infintie exntesions
+
+Second example
+
+Krull topology
+
+**Exercise**. Prove that the above defines a basis for a topology.
+
+Proving the Fundamental Theorem of Galois Theory
 
 
 
