@@ -158,7 +158,7 @@ $$K^{\text{ab}}/K$$ is Galois.
 (even an infinite one) with an abelian Galois group is in $$K^{\text{ab}}$$.
 
 
-**Exercise**. $$L = Q(\sqrt(p) | p \text{ is prime})$$. Prove that $$\text{Gal}(L/Q) = (Z/2Z)^{\aleph_0}$$.
+**Exercise**. $$L = Q(\sqrt{p} \| p \text{ is prime})$$. Prove that $$\text{Gal}(L/Q) = (Z/2Z)^{\aleph_0}$$.
 
 ### Fundamental Theorem of Galois Theory
 
