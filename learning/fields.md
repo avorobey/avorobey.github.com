@@ -14,7 +14,7 @@ title: Fields Arithmetic
 
 Oct 26, 2015
 
-Introduction to the course
+## Introduction to the course
 
 This course deals with the relationships between the arithmetic properties of fields
 and the group-theoretic properties of their Galois groups. Given a field $$K$$, we can look
@@ -49,6 +49,8 @@ The main theorem of the course, which we will strive to prove, is:
 Theorem. Let $$K$$ be pseudo algebraically closed (PAC). Then $$K$$ is Hilbertian $$\iff \text{Gal}(K)$$ is $$\omega$$-free.
 We proceed to give an introduction to "PAC", "Hilbertian" and "$$\omega$$-free".
 
+## Pseudo Algebraically Closed Fields
+
 Definition. $$K$$ is called pseudo algebraically closed (PAC) if every curve $$C$$ over $$K$$ that is totally irreducible
 (meaning irreducible over the algebraic closure) has a point in the field, that is, $$C(K) \ne \emptyset$$.
 
@@ -72,6 +74,8 @@ The field $$Q^{\text{tot,R}}(\sqrt{-1})$$ is PAC (a theorem by Monet and Pop).
 Example 2. $$\text{Gal}(Q)$$ is a topological group (we won't discuss the topology now), and it's compact. Therefore there's a Haar measure
 on it which is a probability measure. Theorem: with probability 1, if we choose $$\sigma_1, \dots, \sigma_n \in \text{Gal}(Q)$$, then their
 common fixed field $$Q(\underline{\sigma}) = \{x \in \tilde{Q}: x =\sigma_1(x)=\dots = \sigma_n(x)\}$$ is a PAC (a theorem by Jarden).
+
+## Hilbertian Fields
 
 Next we discuss "Hilbertian", which is an arithmetical property of the field, as opposed to PAC which is a geometric property.
 
@@ -114,6 +118,8 @@ Another positive example. Theorem by Weissover(?): If $$K$$ is Hilbertian, $$N/K
 is Hilbertian. (Note: even though $$N$$ itself might well not be!). So for example any finite extension of $$Q^{\text{sol}}$$ above is Hilbertian. The field
 $$Q^{\text{tot,R}}(\sqrt{-1})$$ mentioned above in the PAC section is a finite extension of $$Q^{\text{tot,R}}$$, and so is Hilbertian.
 
+## $$\omega$$-free Groups
+
 Now we discuss "$$\omega$$-free", and although this is a group-theoretic property, we give a field theory definition. We'll say $$\text{Gal}(K)$$ is $$\omega$$-free
 if given any two finite groups $$G,H$$ and an epimorphism $$\phi:G \to H$$ and a finite Galois extension $$L/K$$ with $$\text{Gal}(L/K)\cong H$$, there exists a Galois
 extension $$N/K$$ with $$\text{Gal}(N/K) \cong G$$ and the restriction map from $$\text{Gal}(N/K)$$ to $$\text{Gal}(L/K)$$ corresponds to $$\phi$$ under these
@@ -128,16 +134,16 @@ Open problem: What can be said about $$\text{Gal}(Q)$$? We don't even know what 
 
 Open problem: Is $$Q^{\text{sol}}$$ PAC?
 
-Infinite Galois Theory
+## Infinite Galois Theory
 
 Goal: Extend Galois theory to infinite extensions.
 
-Let $$L/K$$ be an algebraic extension. We'll say that $$L/K$$ is separable if $$L = \cup{i \in I}{L_i}$$ and each $$L_i$$ is separable.
+Let $$L/K$$ be an algebraic extension. We'll say that $$L/K$$ is separable if $$L = \cup_{i \in I}{L_i}$$ and each $$L_i$$ is separable.
 Similarly, $$L/K$$ is normal/Galois if it's a union of finite normal/Galois extensions. Clearly, $$L/K$$ is Galois iff it's separable and normal.
 
 Definition. $$\text{Gal}(L/K) = \{ \sigma \in L: \text{\sigma is an automorphism of }L \text{ constant on }K \} = \text{Aut}_k(L)$$
 
-Example 1. $$K^{\text{sep}} = \{ x \in \tilde{K}: x\text{'s irreducible polynomial is separable} \}
+Example 1. $$K^{\text{sep}} = \{ x \in \tilde{K}: x\text{'s irreducible polynomial is separable} \}$$
 
 $$K^{\text{sep}}$$ is Galois. That it's separable is clear, and it's normal because if an element is separable, so are all its conjugates.
 
