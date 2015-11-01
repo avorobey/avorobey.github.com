@@ -130,6 +130,16 @@ Open problem: Is $$Q^{\text{sol}}$$ PAC?
 
 Infinite Galois Theory
 
+Goal: Extend Galois theory to infinite extensions.
+
+Let $$L/K$$ be an algebraic extension. We'll say that $$L/K$$ is separable if $$L = \cup{i \in I}{L_i}$$ and each $$L_i$$ is separable.
+Similarly, $$L/K$$ is normal/Galois if it's a union of finite normal/Galois extensions. Clearly, $$L/K$$ is Galois iff it's separable and normal.
+
+Definition. $$\text{Gal}(L/K) = \{ \sigma \in L: \text{\sigma is an automorphism of }L \text{ constant on }K \} = \text{Aut}_k(L)$$
+
+Example 1. $$K^{\text{sep}} = \{ x \in \tilde{K}: x\text{'s irreducible polynomial is separable} \}
+
+$$K^{\text{sep}}$$ is Galois. That it's separable is clear, and it's normal because if an element is separable, so are all its conjugates.
 
 
 
