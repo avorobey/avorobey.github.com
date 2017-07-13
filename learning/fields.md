@@ -175,7 +175,36 @@ Second example
 
 
 
+## Exercises
 
+**Exercise**: $$Q^{\text{sol}}$$ is the composition in $$C$$ of all the finite extensions $$N/Q$$ with a solvable Galois group. Prove that $$Q^{\text{sol}}$$
+is not Hilbertian. 
+
+The polynomial $$Y^2-X$$ is irreducible in $$Q^\text{sol}(X)[Y]$$. But for any value $$X=a$$, $$Y^2-a$$ cannot be irreducible, because $$Q^\text{sol}$$
+contains all radical extensions of $$Q$$ and is itself closed under radical extensions, so it contains a square root of $$a$$.
+
+**Exercise**: Explain the last equality above - why can we move from $$K^{\text{sep}}$$ to $$\tilde{K}$$?
+
+$$\tilde{K}/K^\text{sep}$$ is a purely inseparable extension. Suppose it's nontrivial and then $$K$$ has nonzero characteristic $$p$$. It's known that if
+$$f(X) \in K[X]$$ is a polynomial that is inseparable in an extension $$E/K$$, then $$f(X) = g(X^p)$$ for another polynomial $$g(X)\in K[X]$$. If $$g$$ itself
+is inseparable, this can be iterated until we get to $$f(X) = h(X^{p^n})$$ and $$h(X) \in K[X]$$ is separable. In our case $$E/K$$ is $$\tilde{K}/K^\text{sep}$$,
+and we conclude that if $$a$$ is an inseparable element of this extension, then $$a^{p^n}$$ is a zero of a separable polynomial with coefficients in $$K^\text{sep}$$,
+meaning that $$a^{p^n}$$ itself is in $$K^\text{sep}$$.
+
+So the extension  $$\tilde{K}/K^\text{sep}$$ is obtained by adjoining to $$K^\text{sep}$$ all possible $$p^n$$-th roots. Then every automorphism of $$\tilde{K}$$
+that fixes $$K^\text{sep}$$ must permute the roots of polynomials in $$K^\text{sep}[X]$$. But each element  $$a \in \tilde{K}$$ is a root of some such polynomial $$X^{p^n}-a^{p^n}$$,
+and since this polynomial splits as $$(X-a)^{p^n}$$ (here we use the characteristic of $$K$$), it only has one root $$a$$, and every automorphism that fixes $$K^\text{sep}$$ must fix $$a$$.
+It follows that if an automorphism of $$\tilde(K)$$ fixes $$K^\text{sep}$$, it is an identity, or in other words, the restriction map from $$\text{Aut}_K(\tilde{K})$$
+to $$\text{Aut}_K(K^\text{sep}) = \text{Gal}(K^{\text{sep}}/K)$$ is an isomorphism.
+
+
+**Exercise**. $$\text{Gal}(K^{\text{ab}})$$ is abelian, and $$K^{\text{ab}}$$ is maximal under this property, i.e. any other extension
+(even an infinite one) with an abelian Galois group is in $$K^{\text{ab}}$$.
+
+
+**Exercise**. $$L = Q(\sqrt{p} \| p \text{ is prime})$$. Prove that $$\text{Gal}(L/Q) = (Z/2Z)^{\aleph_0}$$.
+
+**Exercise**. Prove that the above defines a basis for a topology.
 
 
 
